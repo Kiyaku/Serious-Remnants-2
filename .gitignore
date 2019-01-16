@@ -1,0 +1,10 @@
+*
+!*/
+!/config/*
+!/scripts/*
+!/resources/*
+!/structures/*
+!/patchouli_books/*
+!/patchouli_data.json
+!/todo.txt
+!.gitignore

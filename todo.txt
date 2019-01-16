@@ -1,0 +1,107 @@
+SeriousRemnants 1.12.2
+- update SRAdditions
+- fix crucible recipes for water bottles again
+- disable wood and stone tools
+- add recipe for ore chunks in embers melter for 6 nuggets
+- add season info to all crops
+- add nutrition values to all food items
+- adjust ore spawns to be in caves (and limit higher up ore to be in lower strata layers)
+- remove survivalist (use ore clusters still? Dungeon tactic ones?)
+- aquaculture
+	- use work blade to turn fish into meat + bones
+✔ use primal core @done (18-12-02 18:10)
+- smaller storage
+	- use charcoal pit vessels
+✔ add bronze to sariri recipe? @done (18-12-02 18:10)
+	- use charcoal pit to make bronze first, similar to bloomery
+	- use sariri to make iron
+- fix tallow, only use primal core ones
+✔ disable bwm bark when crafting planks? @done (18-12-05 04:44)
+✘ dynamic trees? (No, i cant do the "no punch tree" thing with this) @cancelled (18-12-02 17:29)
+✔ reset primal core configs @done (18-12-02 17:29)
+✔ reset tough as nails configs @done (18-12-02 17:29)
+  ✘ use smaller health setting (doesnt exist anymore! Scaling health it is) @cancelled (18-12-02 18:10)
+✔ test hcfishing with aquaculture @done (18-12-02 18:10)
+✔ add fish recipes using a knife/work blade @done (18-12-02 17:29)
+- move crafting table recipe to carpenters table
+- move normal chest recipe to carpenters table
+✔ add fish kniving recipes to artisan table, add bones and 2nd output @done (18-12-05 04:44)
+- add recipe to turn fish meat + knife into chum
+✔ add fish meat recipes to normal fish @done (18-12-05 04:44)
+✘ rename dungeon tactics barrel to "Storage Barrel" @cancelled (18-12-05 04:43)
+- add ores to hcstrata list
+✘ better way of making bottles? @cancelled (18-12-05 04:43)
+  - no, early game you can drink from rivers/rain water (actually rain water wont work)
+- add hydration to some fruit items?
+✔ add geolosys @done (18-12-05 04:43)
+✔ adjust cofh configs to use geolosys ores @done (19-01-06 02:07)
+- add totemic? 
+✔ remove roots?? @done (19-01-06 02:07)
+- add interaction between primal core fire bow and TAN campfire
+- make sure other liquid buckets cant be placed properly
+- add more animal fat and bone drops to other animals
+- remove campfire spit + tan campfire and use hibachi for cooking food? What will people eat instead? To make the hibachi more useful
+  - player can eat berries and such
+  - or extend furnace recipes to take much longer?
+- add geolosys ore recipes to charcoal pit kiln
+- use cofh vanilla tools for additional rods
+  - use aquaculture textures to disguise cofh rods
+  - remove aquaculture rods
+✔ add combustion fishing @done (19-01-06 01:42)
+✔ add a right click harvest mod @done (19-01-06 01:42)
+- not able to drink from streams water (does the other drink mod work for that?)
+✔ add instrument mod? @done (19-01-11 18:17)
+- adjust all log recipes to only give 2 and require primal core axe
+- disable hoes and make use of animania tiller?
+  - makes early farming too difficult?
+- remove railcraft stuff from loot tables
+- check if iron nugget furnace recipe is gone
+✔ use other no tree punching mod @done (19-01-11 18:17)
+- move all leather crafting to artisan table?
+- disable aggressive animal 
+✔ add extended days @done (19-01-11 18:17)
+- adjust charcoal pit cook times again
+- increase stick output with hatchets?
+- reduce ore spawn by like half? 
+  - spawn copper/tin higher
+- Disable thaumcraft portals, have custom structure triggering them
+- Have a special tool for picking up remain blocks? (Prospecting pick?)
+✔ remove dungeon tactics @done (19-01-14 05:29)
+  - remove barrel recipe. Gonna have to use ceramic vessels for storage?
+✔ remove better rails @done (19-01-14 05:28)
+✔ remove cooking for blockheads @done (19-01-14 05:28)
+- re-add cusine wood plank recipes and see if they work better now
+✔ remove nether ex? @done (19-01-14 05:28)
+- add more normal animal mods? (especially hostile)
+- remove rustic cabinet recipe (or make more expensive, similar to better storage)
+- remove tinkers recipes
+  - stone torch
+✔ remove Totemic @done (19-01-14 05:28)
+- remove tech stuff from bibliocraft?
+- re-enable rain collector?
+- disable mystcraft recipes
+✔ remove Platforms @done (19-01-14 05:27)
+✔ remove spartan shields @done (19-01-14 05:27)
+- give out Betweenlands itmes from quest rewards using the bountiful mod?
+- add epic zombie siege?
+- remove tools from loot tables
+- use Earthworks adobe bricks for bloomery
+  - add wet adobe bricks items, have them dry before turning into normal bricks
+- try cave generator
+✔ try heavy inventories @done (19-01-14 14:05)
+- try smart hud
+- try simplelogic stuff
+- add realistic torch mod
+- addon or something to allow lighting charcoal forge with fire starter?
+
+
+
+Ideas:
+- figure out how to prevent random loot from skipping progression
+- smaller chests? 
+- custom end structures
+  - or remove end altogether
+- add cobble/mossy blocks to cave gen, maybe other stuff to make more interesting 
+- add ores to only cave surfaces (see bookmarks for example)
+- use modular machines + diversity to create big ember + bwm powered bores that generate specific items (TC gems/ores, AS ores, big amount of vanilla ores, etc)
+- use Patchouli book to display custom drawings of ideas/machines the player discovers/comes up with

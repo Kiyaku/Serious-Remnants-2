@@ -1,0 +1,45 @@
+import mods.primal.DryingRack;
+import mods.primal.Smelter;
+
+recipes.remove(<primal:brickform>);
+recipes.remove(<primal:kiln_adobe>);
+recipes.remove(<primal:stone_basin>);
+recipes.addShaped("cheaper_basin", <primal:stone_basin>, [[<ore:cobblestone>, null, <ore:cobblestone>], [null, <ore:cobblestone>, null]]);
+
+recipes.remove(<primal:smelter:*>);
+
+furnace.remove(<primal:crude_iron_ingot>);
+
+recipes.addShaped("primal_smeltery_mud", <primal:smelter>.withTag({BlockEntityTag: {covered: 1 as byte}, type: "mud"}), [[null, <ore:blockMud>, null], [<ore:blockMud>, <ore:ingotBronze>, <ore:blockMud>], [<ore:blockMud>, <ore:blockMud>, <ore:blockMud>]]);
+recipes.addShaped("primal_smeltery_terra", <primal:smelter:1>.withTag({BlockEntityTag: {covered: 1 as byte}, type: "terra"}), [[null, <ore:blockTerracotta>, null], [<ore:blockTerracotta>, <ore:ingotBronze>, <ore:blockTerracotta>], [<ore:blockTerracotta>, <ore:blockTerracotta>, <ore:blockTerracotta>]]);
+recipes.addShaped("primal_smeltery_cinis", <primal:smelter:2>.withTag({BlockEntityTag: {covered: 1 as byte}, type: "cinis"}), [[null, <ore:blockCiniscotta>, null], [<ore:blockCiniscotta>, <ore:ingotBronze>, <ore:blockCiniscotta>], [<ore:blockCiniscotta>, <ore:blockCiniscotta>, <ore:blockCiniscotta>]]);
+recipes.addShaped("primal_smeltery_adobe", <primal:smelter:3>.withTag({BlockEntityTag: {covered: 1 as byte}, type: "adobe"}), [[null, <ore:blockAdobe>, null], [<ore:blockAdobe>, <ore:ingotBronze>, <ore:blockAdobe>], [<ore:blockAdobe>, <ore:blockAdobe>, <ore:blockAdobe>]]);
+
+
+// ----------------- BASIN
+recipes.addShaped("bonemeal_from_fish_bones", <minecraft:dye:15> * 2, [[<ore:rock>], [<aquaculture:fish:38>], [<primal:stone_basin:*>.transformDamage(1)]]);
+
+
+
+// ----------------- DRYING RACK
+
+DryingRack.removeRecipe("primal:bucket_clay");
+
+
+
+// ----------------- SMELTER
+Smelter.removeRecipe("primal:iron");
+Smelter.addRecipe("primal_smelter_iron_1", 
+    13, 
+    [<ore:oreIron>, <ore:charcoal>], 
+    [<minecraft:iron_nugget>]
+);
+
+
+
+// ----------------- LOGS
+recipes.addShaped("primal_greatwood_1", <thaumcraft:plank_greatwood> * 2, [[<ore:toolWorkBlade>], [<thaumcraft:log_greatwood>]]);
+recipes.addShaped("primal_greatwood_2", <thaumcraft:plank_greatwood> * 2, [[<ore:toolAxe>], [<thaumcraft:log_greatwood>]]);
+
+recipes.addShaped("primal_silverwood_1", <thaumcraft:plank_silverwood> * 2, [[<ore:toolWorkBlade>], [<thaumcraft:log_silverwood>]]);
+recipes.addShaped("primal_silverwood_2", <thaumcraft:plank_silverwood> * 2, [[<ore:toolAxe>], [<thaumcraft:log_silverwood>]]);

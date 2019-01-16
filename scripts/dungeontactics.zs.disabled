@@ -1,0 +1,2 @@
+//recipes.remove(<dungeontactics:barrel>);
+//recipes.addShaped("custom_dt_barrel", <dungeontactics:barrel>, [[<primal:iron_ring>, <ore:slabWood>, <primal:iron_ring>], [<ore:plankWood>, null, <ore:plankWood>], [<primal:iron_ring>, <ore:plankWood>, <primal:iron_ring>]]);
