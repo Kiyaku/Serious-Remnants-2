@@ -1,1 +1,30 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "tinkersforging:book": {
+      "viewedEntries": [
+        "tinkersforging:items/tinkers_hammer",
+        "tinkersforging:items/armor",
+        "tinkersforging:forging/tinkers_anvil",
+        "tinkersforging:forging/rules",
+        "tinkersforging:forging/getting_started",
+        "tinkersforging:temperature/melting_points",
+        "tinkersforging:temperature/charcoal_forge",
+        "tinkersforging:temperature/brick_forge"
+      ],
+      "bookmarks": [],
+      "history": [
+        "tinkersforging:temperature/brick_forge",
+        "tinkersforging:temperature/charcoal_forge",
+        "tinkersforging:temperature/melting_points",
+        "tinkersforging:forging/getting_started",
+        "tinkersforging:forging/rules",
+        "tinkersforging:forging/tinkers_anvil",
+        "tinkersforging:items/tinkers_hammer",
+        "tinkersforging:items/armor"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

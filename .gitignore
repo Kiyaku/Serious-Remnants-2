@@ -7,4 +7,5 @@
 !/patchouli_books/*
 !/patchouli_data.json
 !/todo.txt
+!/minecraftinstance.json
 !.gitignore

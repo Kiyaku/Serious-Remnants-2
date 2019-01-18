@@ -71,9 +71,10 @@ SeriousRemnants 1.12.2
 ✔ remove better rails @done (19-01-14 05:28)
 ✔ remove cooking for blockheads @done (19-01-14 05:28)
 - re-add cusine wood plank recipes and see if they work better now
+  - keep horse power chopping board, since it doesnt need to pause in between hits. Rename cuisine board to "food board" and change the recipe
 ✔ remove nether ex? @done (19-01-14 05:28)
 - add more normal animal mods? (especially hostile)
-- remove rustic cabinet recipe (or make more expensive, similar to better storage)
+- make rustic cabinet recipe more expensive (compare to BetterStorage2 one)
 - remove tinkers recipes
   - stone torch
 ✔ remove Totemic @done (19-01-14 05:28)
@@ -83,16 +84,42 @@ SeriousRemnants 1.12.2
 ✔ remove Platforms @done (19-01-14 05:27)
 ✔ remove spartan shields @done (19-01-14 05:27)
 - give out Betweenlands itmes from quest rewards using the bountiful mod?
-- add epic zombie siege?
+- add epic siege mod?
+  - mostly for zombies breaking through walls?
 - remove tools from loot tables
-- use Earthworks adobe bricks for bloomery
-  - add wet adobe bricks items, have them dry before turning into normal bricks
-- try cave generator
+✔ use Earthworks adobe bricks for bloomery @done (19-01-16 12:59)
+- add wet adobe bricks items, have them dry before turning into normal bricks
+✔ try cave generator @done (19-01-16 12:42)
 ✔ try heavy inventories @done (19-01-14 14:05)
 - try smart hud
 - try simplelogic stuff
 - add realistic torch mod
-- addon or something to allow lighting charcoal forge with fire starter?
+- addon or something to allow lighting charcoal forge (tinkers forging) with fire starter?
+  - reported to mod author
+- add double ingots item?
+- add welded ingot item?
+- adjust some recipes to match/be similar to TFC recipes
+  - make buckets use welded ingots
+✔ compare ingot output to TFC and see if needs to be adjusted @done (19-01-16 13:30)
+- test if wood buckets can milk cows
+- use Tetra for making weapons? 
+  - Lots of work if i wanna go with tinkers weapons (would this even be useful? Can i turn a weapon INTO a tinkers weapon?)
+    - dont use tinkers, just base materials
+    - give tools special enchamtnents depending on material?
+  - use tinkers forging parts for tools parts
+  - add tool part modifications as tooltips to tool parts
+  - use wooden vanilla tools als templates (can i use low durabilty?)
+  ✔ do i still need "Quality Tools" then? (no) @done (19-01-17 13:24)
+
+
+
+- ask rustic about config option for liquid barrel fluid from rain + remove liquid when breaking barrel
+- ask TAN people about debuff length
+
+
+
+Mod Ideas:
+  - Stop spawning enemies in areas player hang out for a while (is there something like this already?)
 
 
 

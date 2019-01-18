@@ -30,6 +30,11 @@ recipes.addShapeless("gravel_to_flint", <minecraft:flint>, [<minecraft:gravel>, 
 
 
 
+
+<minecraft:wooden_pickaxe>.maxDamage = 1;
+<minecraft:wooden_axe>.maxDamage = 0;
+
+
 // Seed drops
 vanilla.seeds.addSeed(<minecraft:stick>.weight(15));
 vanilla.seeds.addSeed(<minecraft:flint>.weight(7));

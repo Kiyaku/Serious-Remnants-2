@@ -9,7 +9,11 @@ val oreAxe = <ore:toolAxe>;
 val oreHatchet = <ore:toolHatchet>;
 oreHatchet.addAll(oreAxe);
 
-global nuggetsPerOre = 4 as int;
+global nuggetsPerOre as int = 3;
+
+global toolMaterialNames as string[] = ["Copper", "Tin", "Lead", "Iron", "Gold", "Silver", "Dawnstone", "Bronze"];
+global toolPartNames as string[] = ["adze", "basic_pickaxe", "basic_axe", "hoe", "machete", "sickle", "basic_blade", "heavy_blade", "short_blade"];
+
 
 
 global oreFish as IItemStack[] = [
