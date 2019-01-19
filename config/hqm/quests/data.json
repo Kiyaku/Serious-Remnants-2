@@ -1,0 +1,84 @@
+[
+  {
+    "uuid": "ec0fa42d-252e-495f-823c-cf4c50df80b3",
+    "name": "SeriousCreeper",
+    "lives": 3,
+    "team": {
+      "id": -1,
+      "lifeSetting": "SHARE",
+      "rewardSetting": "ALL",
+      "players": [
+        {
+          "uuid": "ec0fa42d-252e-495f-823c-cf4c50df80b3",
+          "owner": true,
+          "bookOpen": false,
+          "inTeam": true
+        }
+      ],
+      "reputations": [],
+      "questDataList": [
+        {
+          "questId": "ef2bf7fd-be7c-43f0-8a7f-155038958477",
+          "questData": {
+            "players": 1,
+            "rewards": [
+              false
+            ],
+            "completed": false,
+            "claimed": false,
+            "available": true,
+            "time": 0,
+            "tasksSize": 1,
+            "tasks": [
+              {
+                "type": "ITEMS",
+                "completed": false,
+                "count": 0,
+                "progress": []
+              }
+            ]
+          }
+        },
+        {
+          "questId": "440a9456-cab2-47bf-a3fd-90d6cf533d83",
+          "questData": {
+            "players": 1,
+            "rewards": [
+              false
+            ],
+            "completed": false,
+            "claimed": false,
+            "available": true,
+            "time": 0,
+            "tasksSize": 0,
+            "tasks": []
+          }
+        }
+      ],
+      "invites": []
+    },
+    "selectedQuest": "ef2bf7fd-be7c-43f0-8a7f-155038958477",
+    "playedLore": false,
+    "receivedBook": true,
+    "groupData": {},
+    "deaths": {
+      "ec0fa42d-252e-495f-823c-cf4c50df80b3": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

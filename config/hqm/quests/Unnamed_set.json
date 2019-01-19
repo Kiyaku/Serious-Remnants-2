@@ -1,0 +1,26 @@
+{
+  "name": "Unnamed set",
+  "quests": [
+    {
+      "uuid": "ef2bf7fd-be7c-43f0-8a7f-155038958477",
+      "name": "Unnamed",
+      "x": 22,
+      "y": 14,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "440a9456-cab2-47bf-a3fd-90d6cf533d83",
+      "name": "Unnamed",
+      "x": 79,
+      "y": 55,
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

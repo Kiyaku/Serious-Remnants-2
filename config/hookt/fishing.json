@@ -1,0 +1,32 @@
+{
+  "rules": [
+    {
+      "drops": [
+        {
+          "item": {
+            "selector": {
+              "weight": {
+                "value": 1000
+              }
+            },
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        },
+        {
+          "item": {
+            "selector": {
+              "weight": {
+                "value": 1
+              }
+            },
+            "items": [
+              "minecraft:string"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

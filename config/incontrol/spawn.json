@@ -1,0 +1,11 @@
+[
+  {
+    "dimension": 0,
+    "passive": true,
+    "result": "allow"
+  },
+  {
+  	"dimension": 0,
+  	"result": "deny"
+  }
+]

@@ -1,0 +1,119 @@
+{
+    "images":
+    {
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.quit",
+            "texture" : "custommainmenu:textures/gui/button.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 200,
+            "posX" : 5,
+            "posY" : 30,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.singleplayer",
+            "texture" : "custommainmenu:textures/gui/button.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 200,
+            "posX" : -115,
+            "posY" : 0,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.multiplayer",
+            "texture" : "custommainmenu:textures/gui/button.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 200,
+            "posX" : 5,
+            "posY" : 0,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.options",
+            "texture" : "custommainmenu:textures/gui/button.png",
+            "imageWidth" : 1000,
+            "imageHeight" : 200,
+            "posX" : -115,
+            "posY" : 30,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+
+        "link1":
+        {
+            "text" : "",
+            "texture" : "custommainmenu:textures/gui/youtube.png",
+            "posX" : -50,
+            "posY" : -37,
+            "width" : 45,
+            "height" : 32,
+            "imageWidth" : 90,
+            "imageHeight" : 64,
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.youtube.com/seriouscreeper"
+            }
+        }
+    },
+    
+    "texts":
+    {
+    },
+
+    "labels":
+    {
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -48,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other": {
+        "background": {
+            "image": "custommainmenu:textures/gui/background.png"
+        }
+    }
+}
