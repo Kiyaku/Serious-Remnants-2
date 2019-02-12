@@ -1,8 +1,8 @@
 {
   "version": 2,
   "data": {
-    "minecraft:sky": "SHORE",
     "minecraft:hell": "CAVE_WALLS",
-    "minecraft:void": "END_VOID"
+    "minecraft:void": "END_VOID",
+    "minecraft:sky": "SHORE"
   }
 }

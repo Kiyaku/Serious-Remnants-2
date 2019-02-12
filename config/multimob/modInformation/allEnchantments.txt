@@ -31,6 +31,7 @@ minecraft:vanishing_curse
 bibliocraft:bibliocraft.deathcompassench
 bibliocraft:bibliocraft.readingench
 felling:felling
+natural_absorption:absorption
 cofhcore:holding
 cofhcore:insight
 cofhcore:leech
@@ -39,6 +40,8 @@ cofhcore:smashing
 cofhcore:smelting
 cofhcore:soulbound
 cofhcore:vorpal
+astralsorcery:enchantment.as.nightvision
+astralsorcery:enchantment.as.smelting
 betterstorage:unlocking
 betterstorage:lockpicking
 betterstorage:morphing

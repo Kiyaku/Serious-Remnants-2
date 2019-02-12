@@ -13,7 +13,7 @@ for part in toolPartNames {
 
 		for p in tempParts {
 			for item in ingotOreDict.items {
-				Anvil.addRecipe(item * 3, p, 3, "punch_last", "hit_second_last", "upset_third_last");
+				Anvil.addRecipe(item * 3, p, 1, "punch_last", "hit_second_last", "upset_third_last");
 			}
 		}
 	}

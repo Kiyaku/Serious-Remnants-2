@@ -93,9 +93,8 @@ SeriousRemnants 1.12.2
 ✔ try heavy inventories @done (19-01-14 14:05)
 - try smart hud
 - try simplelogic stuff
-- add realistic torch mod
 - addon or something to allow lighting charcoal forge (tinkers forging) with fire starter?
-  - reported to mod author
+  ✔ reported to mod author @done (19-01-24 21:43)
 - add double ingots item?
 - add welded ingot item?
 - adjust some recipes to match/be similar to TFC recipes
@@ -110,7 +109,8 @@ SeriousRemnants 1.12.2
   - add tool part modifications as tooltips to tool parts
   - use wooden vanilla tools als templates (can i use low durabilty?)
   ✔ do i still need "Quality Tools" then? (no) @done (19-01-17 13:24)
-
+- remove realistic torches
+- add torch recipe to forge 
 
 
 - ask rustic about config option for liquid barrel fluid from rain + remove liquid when breaking barrel

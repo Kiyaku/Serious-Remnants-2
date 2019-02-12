@@ -20,7 +20,7 @@
             },
             {
                 "material": {
-                    "item": "contenttweaker:copper_adze",
+                    "item": "contenttweaker:copper_adze_part",
                     "count": 1
                 },
                 "requiredCapabilities": {

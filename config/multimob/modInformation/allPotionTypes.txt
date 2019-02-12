@@ -58,10 +58,10 @@ treasure2:extra_strong_poison
 treasure2:extra_strong_regeneration
 treasure2:extra_strong_strength
 treasure2:extra_strong_swiftness
-cuisine:cuisine.cold_blood
-cuisine:cuisine.hot
-cuisine:cuisine.dispersal
 cuisine:cuisine.toughness
+cuisine:cuisine.cold_blood
+cuisine:cuisine.dispersal
+cuisine:cuisine.hot
 charcoal_pit:coke_cola
 charcoal_pit:coke_cola_long
 charcoal_pit:coke_cola_strong

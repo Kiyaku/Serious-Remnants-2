@@ -1,6 +1,6 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
     "tinkersforging:book": {
       "viewedEntries": [
@@ -15,14 +15,54 @@
       ],
       "bookmarks": [],
       "history": [
-        "tinkersforging:temperature/brick_forge",
         "tinkersforging:temperature/charcoal_forge",
+        "tinkersforging:temperature/brick_forge",
         "tinkersforging:temperature/melting_points",
         "tinkersforging:forging/getting_started",
         "tinkersforging:forging/rules",
         "tinkersforging:forging/tinkers_anvil",
         "tinkersforging:items/tinkers_hammer",
         "tinkersforging:items/armor"
+      ],
+      "completedManualQuests": []
+    },
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:intro/intro",
+        "naturesaura:intro/aura",
+        "naturesaura:intro/botany",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:practices/tree_ritual",
+        "naturesaura:practices/aura_bottle",
+        "naturesaura:using/altar",
+        "naturesaura:creating/ancient_tree",
+        "naturesaura:effects/cache_recharge",
+        "naturesaura:effects/plant_boost"
+      ],
+      "bookmarks": [],
+      "history": [
+        "naturesaura:effects/plant_boost",
+        "naturesaura:effects/cache_recharge",
+        "naturesaura:creating/ancient_tree",
+        "naturesaura:using/altar",
+        "naturesaura:practices/aura_bottle",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:practices/tree_ritual",
+        "naturesaura:intro/botany",
+        "naturesaura:intro/aura",
+        "naturesaura:intro/intro"
+      ],
+      "completedManualQuests": []
+    },
+    "cuisine:culinary_101": {
+      "viewedEntries": [
+        "cuisine:ingredients/apple",
+        "cuisine:misc/wooden_arm"
+      ],
+      "bookmarks": [],
+      "history": [
+        "cuisine:misc/wooden_arm",
+        "cuisine:ingredients/apple"
       ],
       "completedManualQuests": []
     }
