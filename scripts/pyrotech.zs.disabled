@@ -1,0 +1,35 @@
+import mods.pyrotech.Bloomery;
+import mods.pyrotech.GraniteAnvil;
+import mods.jei.JEI;
+
+Bloomery.createBloomeryBuilder(
+        "bloom_from_syrmorite_ore",   // recipe name
+        <thebetweenlands:items_misc:11>, // output
+        <thebetweenlands:syrmorite_ore>     // input
+    )
+    .setAnvilTiers(["granite", "ironclad"])
+    .setBurnTimeTicks(2880)
+    .setFailureChance(0.25)
+    .setBloomYield(12, 15)
+    .setSlagItem(<pyrotech:generated_slag_iron>, 4)
+    .addFailureItem(<pyrotech:slag>, 1)
+    .addFailureItem(<pyrotech:generated_slag_iron>, 2)
+    .register();
+
+
+JEI.removeAndHide(<pyrotech:chopping_block>);
+JEI.removeAndHide(<pyrotech:worktable>);
+JEI.removeAndHide(<pyrotech:worktable_stone>);
+JEI.removeAndHide(<pyrotech:stone_sawmill>);
+
+
+recipes.remove(<pyrotech:wood_rack>);
+recipes.addShaped("storage/wood_rack", <pyrotech:wood_rack>, 
+        [[<ore:logWood>, <ore:slabWood>, <ore:logWood>], 
+         [<ore:ladder>, <ore:slabWood>, <ore:ladder>], 
+         [<ore:logWood>, <ore:slabWood>, <ore:logWood>]]);
+
+
+// Granite Anvil Recipes
+GraniteAnvil.removeRecipes(<pyrotech:material:28>);
+GraniteAnvil.addRecipe("limestone_rocks_to_crushed_limestone", <pyrotech:material:28>, <thebetweenlands:items_misc:27>, 4, "hammer");

@@ -1,13 +1,12 @@
-mods/*
-downloads/*
-hookt.log
-llibrary/*
-logs/*
-resourcepacks/*
-saves/*
-screenshots/*
-server-resource-packs/*
-TombManyGraves/*
-usercache.json
-usernamecache.json
-Archive.zip
+# Ignore everything
+*
+# But descend into directories
+!*/
+# Recursively allow files under subtree
+!/config/**
+!/scripts/**
+!/resources/**
+!/structures/**
+!/patchouli_books/**
+# You can be specific with these rules
+!.gitignore 

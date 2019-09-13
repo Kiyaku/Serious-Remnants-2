@@ -1,0 +1,541 @@
+# Configuration file
+
+general {
+    # Minimum distance between Barrow structures. Set to -1 to disable.
+    # Min: -1
+    # Max: 2147483647
+    I:BarrowDistance=400
+
+    # Mininmum distance between Hut structures. Set to -1 to disable.
+    # Min: -1
+    # Max: 2147483647
+    I:HutDistance=400
+
+    # Inject some items from Mystical World into dungeon & other loot chests
+    B:InjectLoot=false
+
+    # Maximum nubmer of pulls for injected loot
+    I:InjectMaximum=1
+
+    # Minimum number of pulls for injected loot
+    I:InjectMinimum=1
+
+    # Enable squid drops
+    B:InjectSquid=false
+
+    ##########################################################################################################
+    # modules
+    #--------------------------------------------------------------------------------------------------------#
+    # Mystical world content modules. These modules are applied before any other config options.
+    ##########################################################################################################
+
+    modules {
+        # Enable Embers Content
+        B:embersModuleEnabled=true
+
+        # Enable Mystical World Content
+        B:mysticalWorldModuleEnabled=true
+
+        # Enable Roots Content
+        B:rootsModuleEnabled=true
+
+        # Enable Solar Content
+        B:solarModuleEnabled=true
+    }
+
+    ##########################################################################################################
+    # mobs
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawning of mobs in Mystical World and dependent mods.
+    ##########################################################################################################
+
+    mobs {
+        # Enable the spawning of Beetle.
+        B:spawnBeetle=true
+
+        # Enable the spawning of Deer.
+        B:spawnDeer=false
+
+        # Enable the spawning of Endermini.
+        B:spawnEndermini=false
+
+        # Enable the spawning of Fox.
+        B:spawnFox=false
+
+        # Enable the spawning of Frog.
+        B:spawnFrog=false
+
+        # Enable the spawning of Owls.
+        B:spawnOwl=true
+
+        # Enable the spawning of Sprouts.
+        B:spawnSprout=false
+    }
+
+    ##########################################################################################################
+    # metals
+    #--------------------------------------------------------------------------------------------------------#
+    # Mystical world metals and their components.
+    ##########################################################################################################
+
+    metals {
+        B:enableAluminum=false
+
+        # Enable Blocks for Metals
+        B:enableBlocks=true
+        B:enableBrass=false
+        B:enableBronze=false
+
+        # Enable Copper
+        B:enableCopper=false
+        B:enableDawnstone=false
+
+        # Enable Dusts for Metals
+        B:enableDusts=false
+        B:enableElectrum=false
+
+        # Enable Ingots for Metals
+        B:enableIngots=false
+        B:enableInvar=false
+        B:enableLead=false
+        B:enableNickel=false
+
+        # Enable Nuggets for Metals
+        B:enableNuggets=false
+
+        # Enable Ores for Metals
+        B:enableOres=false
+
+        # Enable Silver
+        B:enableSilver=false
+        B:enableSootyIron=false
+        B:enableTin=false
+
+        # Enable Tiny Dusts for Metals
+        B:enableTinyDusts=false
+        B:enableZinc=false
+    }
+
+    ##########################################################################################################
+    # oregen
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls ore generation for Mystical World Ores.
+    ##########################################################################################################
+
+    oregen {
+        I:aluminumMaxY=58
+        I:aluminumMinY=0
+        I:aluminumPerChunk=4
+        I:aluminumVeinSize=8
+
+        # The highest an amethyst ore vein can generate
+        # Min: 0
+        # Max: 255
+        I:amethystMaxY=32
+
+        # The lowest an amethsyt ore vein can generate
+        # Min: 0
+        # Max: 255
+        I:amethystMinY=5
+
+        # The amount of amethyst veins to generate per chunk. Set to 0 to disable.
+        I:amethystPerChunk=0
+
+        # The maximum size of an amethyst ore vein.
+        I:amethystVeinSize=5
+
+        # The highest a copper ore vein can generate.
+        # Min: 0
+        # Max: 255
+        I:copperMaxY=64
+
+        # The lowest a copper of vein can generate.
+        # Min: 0
+        # Max: 255
+        I:copperMinY=0
+
+        # The amount of copper veins to generate per chunk. Set to 0 to disable.
+        I:copperPerChunk=0
+
+        # The maximum size of a copper ore vein.
+        I:copperVeinSize=12
+        I:leadMaxY=28
+        I:leadMinY=0
+        I:leadPerChunk=4
+        I:leadVeinSize=8
+        I:nickelMaxY=24
+        I:nickelMinY=0
+        I:nickelPerChunk=4
+        I:nickelVeinSize=8
+
+        # The highest a silver ore vein can generate.
+        # Min: 0
+        # Max: 255
+        I:silverMaxY=28
+
+        # The lowest a silver of vein can generate.
+        # Min: 0
+        # Max: 255
+        I:silverMinY=0
+
+        # The amount of silver veins to generate per chunk. Set to 0 to disable.
+        I:silverPerChunk=0
+
+        # The maximum size of a silver ore vein.
+        I:silverVeinSize=8
+        I:tinMaxY=48
+        I:tinMinY=0
+        I:tinPerChunk=6
+        I:tinVeinSize=8
+        I:zincMaxY=32
+        I:zincMinY=0
+        I:zincPerChunk=4
+        I:zincVeinSize=8
+    }
+
+    ##########################################################################################################
+    # deer
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Deer
+    ##########################################################################################################
+
+    deer {
+        # Biomes to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            FOREST
+            COLD
+            CONIFEROUS
+            PLAINS
+         >
+
+        # Maximum number of deer to spawn in a group
+        I:max=4
+
+        # Min number of deer to spawn in a group
+        I:min=2
+
+        # Spawn rate of deer
+        I:rate=6
+    }
+
+    ##########################################################################################################
+    # fox
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Foxes
+    ##########################################################################################################
+
+    fox {
+        # Biomes to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            FOREST
+            COLD
+            CONIFEROUS
+         >
+
+        # Maximum number of fox to spawn in a group
+        I:max=3
+
+        # Min number of fox to spawn in a group
+        I:min=1
+
+        # Spawn rate of fox
+        I:rate=4
+    }
+
+    ##########################################################################################################
+    # beetle
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Beetle
+    ##########################################################################################################
+
+    beetle {
+        # Biome types to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            SWAMP
+            JUNGLE
+            FOREST
+            PLAINS
+         >
+
+        # Maximum number of beetles to spawn in a group
+        I:max=4
+
+        # Min number of beetles to spawn in a group
+        I:min=2
+
+        # Spawn rate of beetle
+        I:rate=5
+    }
+
+    ##########################################################################################################
+    # frog
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Frog
+    ##########################################################################################################
+
+    frog {
+        # Biomes to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            SWAMP
+            JUNGLE
+            BEACH
+            RIVER
+         >
+
+        # Maximum number of frogs to spawn in a group
+        I:max=4
+
+        # Min number of frogs to spawn in a group
+        I:min=2
+
+        # Spawn rate of frog
+        I:rate=6
+
+        # How often slime balls are dropped; set to -1 to disable slime ball dropping
+        I:slimeTime=18000
+    }
+
+    ##########################################################################################################
+    # sprout
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Sprout
+    ##########################################################################################################
+
+    sprout {
+        # Biomes to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            JUNGLE
+            LUSH
+            MAGICAL
+            RIVER
+            FOREST
+            BEACH
+         >
+
+        # Maximum number of sprouts to spawn in a group
+        I:max=4
+
+        # Min number of sprouts to spawn in a group
+        I:min=2
+
+        # Spawn rate of sprouts
+        I:rate=2
+    }
+
+    ##########################################################################################################
+    # gems
+    #--------------------------------------------------------------------------------------------------------#
+    # Mystical world gems and their components
+    ##########################################################################################################
+
+    gems {
+        # Enabled Amethyst
+        B:enableAmethyst=false
+
+        # Enable blocks
+        B:enableBlocks=false
+
+        # Enable gems
+        B:enableGems=false
+
+        # Enable ore
+        B:enableOres=false
+    }
+
+    ##########################################################################################################
+    # oredebugging
+    #--------------------------------------------------------------------------------------------------------#
+    # Ore Debugging Options
+    ##########################################################################################################
+
+    oredebugging {
+        # Enable the debugging of Amethyst Ore
+        B:"Debug Amethyst Ore"=false
+
+        # Enable the debugging of Copper Ore
+        B:"Debug Copper Ore"=false
+
+        # Enable the debugging of Silver Ore
+        B:"Debug Silver Ore"=false
+
+        # Enable debugging at all. Specific ores will need to be enabled individually before any messages will be printed.
+        B:"Enable Debugging"=false
+
+        # Enable debugging to the standard log file. Useful if you do not generate or have access to debug.log. WARNING: WILL OVERLY INFLATE YOUR STANDARD LOG FILE. ONLY ENABLE IF NEEDED.
+        B:"Enable Info Debugging (ONLY IF NEEDED)"=false
+    }
+
+    ##########################################################################################################
+    # endermini
+    #--------------------------------------------------------------------------------------------------------#
+    # Controls the spawn settings of Endermini
+    ##########################################################################################################
+
+    endermini {
+        # Maximum number of enderminis to spawn in a group
+        I:max=1
+
+        # Min number of enderminis to spawn in a group
+        I:min=1
+
+        # Spawn rate of enderminis in the End
+        I:rate=50
+    }
+
+    ##########################################################################################################
+    # burnt trees
+    #--------------------------------------------------------------------------------------------------------#
+    # Spawn options for burn trees
+    ##########################################################################################################
+
+    "burnt trees" {
+        # Excluded biomes types. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:"Excluded biome types" <
+            VOID
+            END
+            WATER
+            BEACH
+            MESA
+            MUSHROOM
+            NETHER
+            OCEAN
+            RIVER
+         >
+
+        # Attempts to spawn a tree per chunk
+        # Min: 1
+        # Max: 2147483647
+        I:"Spawn attempts"=80
+
+        # Chance (1 in X) of burnt trees spawning; set to -1 to disable
+        # Min: -1
+        # Max: 2147483647
+        I:"Spawn chance"=-1
+    }
+
+    ##########################################################################################################
+    # toolenable
+    #--------------------------------------------------------------------------------------------------------#
+    # Tool/Weapon Enablind
+    ##########################################################################################################
+
+    toolenable {
+        # Set to false to disable amethyst tool recipes entirely
+        B:"Enable amethyst tools"=false
+
+        # Set to false to disable copper tool recipes entirely
+        B:"Enable copper tools"=false
+
+        # Set to false to disable silver tool recipes entirely
+        B:"Enable silver tools"=false
+
+        ##########################################################################################################
+        # amethyst tool recipes
+        #--------------------------------------------------------------------------------------------------------#
+        # Settings for individual Amethyst tool recipes
+        ##########################################################################################################
+
+        "amethyst tool recipes" {
+            # Set to false to disable the amethyst axe recipe
+            B:"Enable amethyst axe"=false
+
+            # Set to false to disable the amethyst hoe recipe
+            B:"Enable amethyst hoe"=false
+
+            # Set to false to disable the amethyst knife recipe
+            B:"Enable amethyst knife"=false
+
+            # Set to false to disable the amethyst pickaxe recipe
+            B:"Enable amethyst pickaxe"=false
+
+            # Set to false to disable the amethyst shovel recipe
+            B:"Enable amethyst shovel"=false
+
+            # Set to false to disable the amethyst sword recipe
+            B:"Enable amethyst sword"=false
+        }
+
+        ##########################################################################################################
+        # copper tool recipes
+        #--------------------------------------------------------------------------------------------------------#
+        # Settings for individual Copper tool recipes
+        ##########################################################################################################
+
+        "copper tool recipes" {
+            # Set to false to disable the copper axe recipe
+            B:"Enable copper axe"=false
+
+            # Set to false to disable the copper hoe recipe
+            B:"Enable copper hoe"=false
+
+            # Set to false to disable the copper knife recipe
+            B:"Enable copper knife"=false
+
+            # Set to false to disable the copper pickaxe recipe
+            B:"Enable copper pickaxe"=false
+
+            # Set to false to disable the copper shovel recipe
+            B:"Enable copper shovel"=false
+
+            # Set to false to disable the copper sword recipe
+            B:"Enable copper sword"=false
+        }
+
+        ##########################################################################################################
+        # silver tool recipes
+        #--------------------------------------------------------------------------------------------------------#
+        # Settings for individual Silver tool recipes
+        ##########################################################################################################
+
+        "silver tool recipes" {
+            # Set to false to disable the silver axe recipe
+            B:"Enable silver axe"=false
+
+            # Set to false to disable the silver hoe recipe
+            B:"Enable silver hoe"=false
+
+            # Set to false to disable the silver knife recipe
+            B:"Enable silver knife"=false
+
+            # Set to false to disable the silver pickaxe recipe
+            B:"Enable silver pickaxe"=false
+
+            # Set to false to disable the silver shovel recipe
+            B:"Enable silver shovel"=false
+
+            # Set to false to disable the silver sword recipe
+            B:"Enable silver sword"=false
+        }
+
+    }
+
+    ##########################################################################################################
+    # owl
+    #--------------------------------------------------------------------------------------------------------#
+    # Conntrols the spawn settings of owls
+    ##########################################################################################################
+
+    owl {
+        # Biomes to spawn in. List consisting of elements from: |SAVANNA, CONIFEROUS, JUNGLE, SPOOKY, DEAD, LUSH, NETHER, END, MUSHROOM, MAGICAL, RARE, OCEAN, RIVER, WATER, MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID|
+        S:biomes <
+            CONIFEROUS
+            SPOOKY
+            MAGICAL
+            FOREST
+            MOUNTAIN
+            SNOWY
+         >
+
+        # Maximum number of frogs to spawn in a group
+        I:max=3
+
+        # Min number of owls to spawn in a group
+        I:min=1
+
+        # Spawn rate of owls
+        I:rate=9
+    }
+
+}
+
+

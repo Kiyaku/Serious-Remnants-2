@@ -1,0 +1,16 @@
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:0>, <botania:mushroom:0>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:1>, <botania:mushroom:1>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:2>, <botania:mushroom:2>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:3>, <botania:mushroom:3>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:4>, <botania:mushroom:4>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:5>, <botania:mushroom:5>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:6>, <botania:mushroom:6>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:7>, <botania:mushroom:7>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:8>, <botania:mushroom:8>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:9>, <botania:mushroom:9>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:10>, <botania:mushroom:10>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:11>, <botania:mushroom:11>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:12>, <botania:mushroom:12>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:13>, <botania:mushroom:13>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:14>, <botania:mushroom:14>);
+mods.orestages.OreStages.addReplacement("locked", <botania:flower:15>, <botania:mushroom:15>);

@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "thebetweenlands:root"
+          ]
+        }
+      },
+      "replaceStrategy": "REPLACE_ITEMS_IF_SELECTED",
+      "drops": [
+      {
+        "selector": {
+            "weight": {
+              "value": 15
+            }
+          },
+          "item": {
+            "items": [
+              "roots:wildroot"
+            ]
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 85
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

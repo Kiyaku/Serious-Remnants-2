@@ -1,0 +1,7 @@
+{
+	"name" : "demo:main",
+	"exclusive" : true,
+	"inherit" : [
+		"demo:theme"
+	]
+}

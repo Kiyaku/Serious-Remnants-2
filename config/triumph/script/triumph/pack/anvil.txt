@@ -1,0 +1,13 @@
+setTitle("Soulforged Steel Anvil")
+
+setIcon("betterwithmods:steel_anvil")
+
+setDescription("Craft a Soulforged Steel Anvil")
+
+addParent("triumph:pack/root")
+
+//Criteria
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem("betterwithmods:steel_anvil")
+
+addRewardFunction("triumph:ore_tier_2_trigger")

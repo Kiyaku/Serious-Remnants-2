@@ -1,0 +1,5 @@
+gamestage silentadd @p ore_tier_2
+title @p times 20 100 20
+title @p title {"text":"Mind Expanded","bold":true}
+title @p subtitle {"text":"You sense new ores in your world","italic":true}
+playsound ui.toast.challenge_complete master @p

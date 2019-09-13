@@ -60,10 +60,6 @@ minecraft:mutated_savanna_rock
 minecraft:mutated_mesa
 minecraft:mutated_mesa_rock
 minecraft:mutated_mesa_clear_rock
-thaumcraft:magical_forest
-thaumcraft:eerie
-thaumcraft:eldritch
-yurtmod:tent
 thebetweenlands:patchy_islands
 thebetweenlands:swamplands
 thebetweenlands:deep_waters

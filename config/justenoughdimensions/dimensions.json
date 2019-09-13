@@ -1,34 +1,9 @@
 {
     "dimensions": [
         {
-            "dim": 6,
-            "dimensiontype": {
-                "id": 6,
-                "name": "Void World",
-                "suffix": "_dim6",
-                "keeploaded": false,
-                "worldprovider": "WorldProviderSurfaceJED"
-            },
-            "worldinfo": {
-                "SpawnX": 0.5,
-                "SpawnY": 101,
-                "SpawnZ": 0.5
-            },
-            "worldinfo_onetime": {
-                "generatorName": "flat",
-                "generatorOptions": "3;minecraft:air;127;",
-                "GameType": 1,
-                "DayTime": 6000,
-                "GameRules": {
-                    "doDaylightCycle": "false",
-                    "doWeatherCycle": "false"
-                }
-            },
+            "dim": -23,
             "jed": {
-                "ForceGameMode": true,
-                "SkyRenderType": 2,
-                "CanRespawnHere": false,
-                "RespawnDimension": 0
+                "CanRespawnHere": true
             }
         }
     ]

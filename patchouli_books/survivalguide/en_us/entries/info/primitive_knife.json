@@ -1,0 +1,11 @@
+{
+    "name": "Primitive Knife",
+    "icon": "primitivetools:primitive_knife_cwf",
+    "category": "category_info",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Knives are not only a good way of killing animals, but it also helps with gathering certain materials.$(br2)Grass yields more plant fiber.$(br)Leaves yield more saplings."
+        }
+    ]
+}

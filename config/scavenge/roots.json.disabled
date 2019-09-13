@@ -1,0 +1,180 @@
+{
+    "block_pools": [
+        {
+            "name": "MossyCragrockTop",
+            "type": {
+                "type": "block",
+                "name": "thebetweenlands:cragrock",
+                "meta": 1
+            },
+            "clicktype": "rightclick",
+            "properties": [
+                 {
+                    "type": "consume_block",
+                    "chance": 100,
+                    "name": "thebetweenlands:cragrock",
+                    "meta": 2
+                },
+                {
+                    "type": "require_item_list",
+                    "items": [
+                        {
+                            "name": "roots:wood_knife"
+                        },
+                        {
+                            "name": "roots:stone_knife"
+                        },
+                        {
+                            "name": "roots:iron_knife"
+                        },
+                        {
+                            "name": "roots:diamond_knife"
+                        },
+                        {
+                            "name": "roots:gold_knife"
+                        }
+                    ],
+                    "level": 0
+                },
+                {
+                    "type": "damage_item",
+                    "amount": 1
+                },
+                {
+                    "type": "swing_hand",
+                    "disableJEI": true
+                },
+                {
+                    "type": "play_sound",
+                    "name": "minecraft:entity.sheep.shear",
+                    "category": "block",
+                    "volume": 1,
+                    "disableJEI": true
+                }
+            ],
+            "drops": [
+                {
+                    "name": "roots:terra_moss",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "MossyCragrockBottom",
+            "type": {
+                "type": "block",
+                "name": "thebetweenlands:cragrock",
+                "meta": 2
+            },
+            "clicktype": "rightclick",
+            "properties": [
+                 {
+                    "type": "consume_block",
+                    "chance": 100,
+                    "name": "thebetweenlands:cragrock",
+                    "meta": 0
+                },
+                {
+                    "type": "require_item_list",
+                    "items": [
+                        {
+                            "name": "roots:wood_knife"
+                        },
+                        {
+                            "name": "roots:stone_knife"
+                        },
+                        {
+                            "name": "roots:iron_knife"
+                        },
+                        {
+                            "name": "roots:diamond_knife"
+                        },
+                        {
+                            "name": "roots:gold_knife"
+                        }
+                    ],
+                    "level": 0
+                },
+                {
+                    "type": "damage_item",
+                    "amount": 1
+                },
+                {
+                    "type": "swing_hand",
+                    "disableJEI": true
+                },
+                {
+                    "type": "play_sound",
+                    "name": "minecraft:entity.sheep.shear",
+                    "category": "block",
+                    "volume": 1,
+                    "disableJEI": true
+                }
+            ],
+            "drops": [
+                {
+                    "name": "roots:terra_moss",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "CreatingMossyCragrockBottom",
+            "type": {
+                "type": "block",
+                "name": "thebetweenlands:cragrock",
+                "meta": 0
+            },
+            "clicktype": "rightclick",
+            "properties": [
+                 {
+                    "type": "consume_block",
+                    "chance": 50,
+                    "name": "thebetweenlands:cragrock",
+                    "meta": 2
+                },
+                {
+                    "type": "require_item",
+                    "name": "roots:terra_spores"
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "swing_hand",
+                    "disableJEI": true
+                }
+            ]
+        },
+        {
+            "name": "CreatingMossyCragrockTop",
+            "type": {
+                "type": "block",
+                "name": "thebetweenlands:cragrock",
+                "meta": 2
+            },
+            "clicktype": "rightclick",
+            "properties": [
+                 {
+                    "type": "consume_block",
+                    "chance": 50,
+                    "name": "thebetweenlands:cragrock",
+                    "meta": 1
+                },
+                {
+                    "type": "require_item",
+                    "name": "roots:terra_spores"
+                },
+                {
+                    "type": "consume_item",
+                    "amount": 1
+                },
+                {
+                    "type": "swing_hand",
+                    "disableJEI": true
+                }
+            ]
+        }
+    ]
+}

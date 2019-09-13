@@ -1,0 +1,97 @@
+{
+  "dependencies": "betweenores",
+  "populate": {
+    "copper": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:copper_ore"
+        },
+        "material": "thebetweenlands:betweenstone",
+        "cluster-size": 12
+      },
+      "cluster-count": 10,
+      "min-height": 0,
+      "max-height": 100,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "tin": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:tin_ore"
+        },
+        "material": "thebetweenlands:betweenstone",
+        "cluster-size": 6
+      },
+      "cluster-count": 6,
+      "min-height": 0,
+      "max-height": 100,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "lead": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:lead_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 8
+      },
+      "cluster-count": 4,
+      "min-height": 0,
+      "max-height": 28,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "silver": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:silver_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 6
+      },
+      "cluster-count": 4,
+      "min-height": 0,
+      "max-height": 28,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    }
+  }
+}
