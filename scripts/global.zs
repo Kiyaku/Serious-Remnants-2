@@ -3,6 +3,20 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
 
+// Variables
+global bone as IItemStack = <thebetweenlands:items_misc:14>;
+global stick as IItemStack = <thebetweenlands:items_misc:20>;
+global rope as IItemStack = <thebetweenlands:items_misc:7>;
+global wwPlank as IItemStack = <thebetweenlands:weedwood_planks>;
+global weedwood as IItemStack = <thebetweenlands:weedwood>;
+global weedwoodLog as IItemStack = <thebetweenlands:log_weedwood>;
+global syrmoriteIngot as IItemStack = <thebetweenlands:items_misc:11>;
+global sulfur as IItemStack = <thebetweenlands:items_misc:18>;
+global limestone_flux as IItemStack = <thebetweenlands:items_misc:27>;
+global syrmoritePlate as IItemStack = <jaopca:item_platesyrmorite>;
+global syrmoriteArmor as IItemStack = <contenttweaker:item_syrmorite_armor>;
+
+
 val oreToolAxe = <ore:toolAxe>;
 
 oreToolAxe.add(<thebetweenlands:weedwood_axe:32767>);
@@ -69,6 +83,18 @@ oreAllFlowers.add(<thebetweenlands:soft_rush>);
 oreAllFlowers.add(<thebetweenlands:dead_weedwood_bush>);
 
 
+val oreIngotIron = <ore:ingotIron>;
+oreIngotIron.remove(<minecraft:iron_ingot>);
+oreIngotIron.add(syrmoriteIngot);
+
+val orePlateIron = <ore:plateIron>;
+for item in orePlateIron.items {
+    orePlateIron.remove(item);
+}
+orePlateIron.add(<jaopca:item_platesyrmorite>);
+
+
+
 // Better With Mods
 global weedwood_sidings as IItemStack = <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "weedwood_planks"}, Name: "thebetweenlands:weedwood_planks"}});
 global weedwood_moulding as IItemStack = <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "weedwood_planks"}, Name: "thebetweenlands:weedwood_planks"}});
@@ -113,16 +139,3 @@ cornerWood.add(giant_root_corner);
 cornerWood.add(hearthgrove_corner);
 cornerWood.add(nibbletwig_corner);
 
-
-// Variables
-global bone as IItemStack = <thebetweenlands:items_misc:14>;
-global stick as IItemStack = <thebetweenlands:items_misc:20>;
-global rope as IItemStack = <thebetweenlands:items_misc:7>;
-global wwPlank as IItemStack = <thebetweenlands:weedwood_planks>;
-global weedwood as IItemStack = <thebetweenlands:weedwood>;
-global weedwoodLog as IItemStack = <thebetweenlands:log_weedwood>;
-global syrmoriteIngot as IItemStack = <thebetweenlands:items_misc:11>;
-global sulfur as IItemStack = <thebetweenlands:items_misc:18>;
-global limestone_flux as IItemStack = <thebetweenlands:items_misc:27>;
-global syrmoritePlate as IItemStack = <jaopca:item_platesyrmorite>;
-global syrmoriteArmor as IItemStack = <contenttweaker:item_syrmorite_armor>;

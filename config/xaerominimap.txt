@@ -1,10 +1,10 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:204
+ignoreUpdate:205
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
 #INGAME SETTINGS (DO NOT EDIT!)
-minimap:false
+minimap:true
 caveMaps:1
 caveZoom:1
 showPlayers:false

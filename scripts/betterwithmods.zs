@@ -107,6 +107,14 @@ Anvil.addShaped(<thebetweenlands:purifier>, [
    [wwPlank,  wwPlank,   <ore:ingotOctine>]
 ]);
 
+recipes.remove(<embers:mech_core>);
+Anvil.addShaped(<embers:mech_core>, [
+   [syrmoriteIngot, <betterwithmods:material:34>, <betterwithmods:material:34>, syrmoriteIngot],
+   [<betterwithmods:material:34>, <embers:plate_lead>, <embers:plate_lead>, <betterwithmods:material:34>],
+   [<betterwithmods:material:34>, <embers:plate_lead>, <embers:plate_lead>, <betterwithmods:material:34>],
+   [syrmoriteIngot, <betterwithmods:material:34>, <betterwithmods:material:34>, syrmoriteIngot]
+]);
+
 
 // Cauldron Recipes
 Cauldron.remove([<betterwithmods:material:6>]);
