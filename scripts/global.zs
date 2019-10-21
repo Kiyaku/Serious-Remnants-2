@@ -15,6 +15,12 @@ global sulfur as IItemStack = <thebetweenlands:items_misc:18>;
 global limestone_flux as IItemStack = <thebetweenlands:items_misc:27>;
 global syrmoritePlate as IItemStack = <jaopca:item_platesyrmorite>;
 global syrmoriteArmor as IItemStack = <contenttweaker:item_syrmorite_armor>;
+global octineIngot as IItemStack = <thebetweenlands:octine_ingot>;
+global octinePlate as IItemStack = <jaopca:item_plateoctine>;
+global valonitePlate as IItemStack = <jaopca:item_platevalonite>;
+
+
+<ore:paper>.add(<thebetweenlands:items_misc:32>);
 
 
 val oreToolAxe = <ore:toolAxe>;
@@ -40,9 +46,9 @@ oreBone.remove(<minecraft:bone>);
 
 val oreStickWood = <ore:stickWood>;
 oreStickWood.remove(<minecraft:stick>);
-oreStickWood.remove(<betterwithmods:shaft>);
+//oreStickWood.remove(<betterwithmods:shaft>);
 
-<ore:gearWood>.remove(<betterwithmods:material:0>);
+//<ore:gearWood>.remove(<betterwithmods:material:0>);
 
 
 val oreDoorWood = <ore:doorWood>;
@@ -91,11 +97,61 @@ val orePlateIron = <ore:plateIron>;
 for item in orePlateIron.items {
     orePlateIron.remove(item);
 }
-orePlateIron.add(<jaopca:item_platesyrmorite>);
+
+orePlateIron.add(syrmoritePlate);
+
+
+val oreBookshelf = <ore:bookshelf>;
+oreBookshelf.add(<aether:skyroot_bookshelf>);
+oreBookshelf.add(<aether:holystone_bookshelf>);
+
+
+val oreVisCrystals = <ore:visCrystals>;
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}));
+oreVisCrystals.add(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}));
+
+
+//orePlateIron.add(<jaopca:item_platesyrmorite>);
 
 
 
 // Better With Mods
+/*
 global weedwood_sidings as IItemStack = <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "weedwood_planks"}, Name: "thebetweenlands:weedwood_planks"}});
 global weedwood_moulding as IItemStack = <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "weedwood_planks"}, Name: "thebetweenlands:weedwood_planks"}});
 global weedwood_corner as IItemStack = <betterwithmods:corner_wood>.withTag({texture: {Properties: {variant: "weedwood_planks"}, Name: "thebetweenlands:weedwood_planks"}});
@@ -139,3 +195,4 @@ cornerWood.add(giant_root_corner);
 cornerWood.add(hearthgrove_corner);
 cornerWood.add(nibbletwig_corner);
 
+*/

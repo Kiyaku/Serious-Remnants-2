@@ -1,0 +1,7 @@
+{
+  "parent": "advancedmortars:block/mortar",
+  "textures": {
+    "mortar": "thebetweenlands:blocks/valonite_block",
+    "particle": "thebetweenlands:blocks/valonite_block"
+  }
+}

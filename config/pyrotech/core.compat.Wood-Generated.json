@@ -10,7 +10,6 @@
     "Entry item strings are in the format: (domain):(path):(meta)"
   ],
   "entries": {
-    "betterwithmods:blood_log:0": "minecraft:planks:3",
     "minecraft:log2:0": "minecraft:planks:4",
     "minecraft:log2:1": "minecraft:planks:5",
     "minecraft:log:0": "minecraft:planks:0",

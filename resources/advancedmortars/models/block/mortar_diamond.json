@@ -1,0 +1,7 @@
+{
+  "parent": "advancedmortars:block/mortar",
+  "textures": {
+    "mortar": "thebetweenlands:blocks/octine_block",
+    "particle": "thebetweenlands:blocks/octine_block"
+  }
+}

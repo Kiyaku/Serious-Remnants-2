@@ -1,4 +1,28 @@
 import mods.thaumcraft.Crucible;
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot:2>);
+import mods.thaumcraft.ArcaneWorkbench;
+import mods.thaumcraft.SalisMundus;
 
-mods.thaumcraft.Crucible.registerRecipe("brassingot", "METALLURGY@1", <thaumcraft:ingot:2>, <thebetweenlands:items_misc:11>, [<aspect:instrumentum> * 5]);
+
+
+// CRUCIBLE RECIPES
+Crucible.removeRecipe(<thaumcraft:ingot:2>);
+Crucible.registerRecipe("brassingot", "METALLURGY@1", <thaumcraft:ingot:2>, <thebetweenlands:items_misc:11>, [<aspect:instrumentum> * 5]);
+
+
+
+// ARCANE WORKBENCH
+ArcaneWorkbench.removeRecipe("salismundusfake");
+ArcaneWorkbench.removeRecipe("salismundus");
+
+
+
+// SALIS MUNDUS
+SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
+SalisMundus.addSingleConversion(<ore:blockSyrmorite>, <thaumcraft:crucible>);
+
+
+
+// MISC
+recipes.remove(<thaumcraft:scribing_tools>);
+recipes.addShapeless("scribingtoolsrefill", <thaumcraft:scribing_tools>, [<thaumcraft:scribing_tools:*>, <mysticalworld:ink_bottle>.transformReplace(<thebetweenlands:dentrothyst_vial:1>)]);
+recipes.addShapeless("scribingtoolscraft1", <thaumcraft:scribing_tools>, [<thebetweenlands:items_misc:3>, <mysticalworld:ink_bottle>.transformReplace(<thebetweenlands:dentrothyst_vial:1>)]);

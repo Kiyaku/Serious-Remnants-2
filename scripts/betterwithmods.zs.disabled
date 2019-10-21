@@ -1,0 +1,261 @@
+import mods.betterwithmods.Mill;
+import mods.betterwithmods.Cauldron;
+import mods.betterwithmods.Crucible;
+import mods.betterwithmods.Saw;
+import mods.betterwithmods.FilteredHopper;
+import mods.betterwithmods.Turntable;
+import mods.betterwithmods.Kiln;
+import mods.betterwithmods.Anvil;
+import mods.jei.JEI;
+
+// Mill Recipes
+//Mill.removeAll();
+//Mill.addRecipe([<thebetweenlands:items_misc:4>], [<betterwithmods:material:7>]);
+//Mill.addRecipe([<thebetweenlands:items_misc:7>], [<betterwithmods:material:3>]);
+
+
+// Filtered Hopper
+//FilteredHopper.addFilter("mudfilter", <thebetweenlands:mud>);
+//FilteredHopper.addFilteredItem("mudfilter", <betterwithmods:material:15>);
+//FilteredHopper.addFilterRecipe("mudfilter", <betterwithmods:material:15>, [], [<betterwithmods:material:16>]);
+//FilteredHopper.addSoulUrnRecipe(<betterwithmods:material:15>, [], [<betterwithmods:material:16>]);
+
+
+
+// Anvil
+Anvil.addShaped(syrmoriteArmor, [
+   [<betterwithmods:material:8>], 
+   [<ore:ingotSyrmorite>], 
+   [<betterwithmods:material:41>], 
+   [<betterwithmods:material:8>]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_helmet>, [
+   [syrmoritePlate,  syrmoritePlate,   null],
+   [syrmoritePlate,  null,             syrmoriteArmor],
+   [syrmoritePlate,  null,             syrmoriteArmor],
+   [syrmoritePlate,  syrmoritePlate,   null]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_chestplate>, [
+   [syrmoriteArmor, syrmoritePlate, null, null],
+   [null, syrmoritePlate, syrmoritePlate, syrmoritePlate],
+   [null, syrmoritePlate, syrmoritePlate, syrmoritePlate],
+   [syrmoriteArmor, syrmoritePlate, null, null]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_leggings>, [
+   [syrmoritePlate, syrmoriteArmor, syrmoriteArmor, syrmoriteArmor],
+   [syrmoritePlate, syrmoritePlate, null, null],
+   [syrmoritePlate, syrmoritePlate, null, null],
+   [syrmoritePlate, syrmoriteArmor, syrmoriteArmor, syrmoriteArmor]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_boots>, [
+   [syrmoritePlate, syrmoritePlate, syrmoriteArmor],
+   [null, null, null],
+   [null, null, null],
+   [syrmoritePlate, syrmoritePlate, syrmoriteArmor]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_shield>, [
+   [syrmoritePlate, syrmoritePlate, syrmoritePlate, syrmoritePlate],
+   [syrmoritePlate, syrmoritePlate, syrmoritePlate, syrmoritePlate]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_shears>, [
+   [null, syrmoritePlate],
+   [syrmoritePlate, null]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_pressure_plate>, [
+   [syrmoritePlate],
+   [syrmoritePlate]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_trapdoor> * 2, [
+   [syrmoritePlate, syrmoritePlate],
+   [syrmoritePlate, syrmoritePlate],
+   [syrmoritePlate, syrmoritePlate]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_hopper>, [
+   [syrmoritePlate, syrmoritePlate, null],
+   [null, <ore:chestWood>, syrmoritePlate],
+   [syrmoritePlate, syrmoritePlate, null]
+]);
+
+Anvil.addShaped(<thebetweenlands:bl_bucket:1>, [
+   [null, syrmoritePlate, null],
+   [<thebetweenlands:items_misc:7>, null, syrmoritePlate],
+   [null, syrmoritePlate, null]
+]);
+
+Anvil.addShaped(<thebetweenlands:syrmorite_door_item> * 2, [
+   [syrmoritePlate, syrmoritePlate, syrmoritePlate],
+   [syrmoritePlate, syrmoritePlate, syrmoritePlate]
+]);
+
+Anvil.addShaped(<jaopca:item_sticksyrmorite> * 2, [
+   [syrmoritePlate, syrmoritePlate]
+]);
+
+Anvil.addShaped(<thebetweenlands:purifier>, [
+   [wwPlank,  wwPlank,   <ore:ingotOctine>],
+   [null,  wwPlank,   <ore:ingotOctine>],
+   [null,  wwPlank,   <ore:ingotOctine>],
+   [wwPlank,  wwPlank,   <ore:ingotOctine>]
+]);
+
+recipes.remove(<embers:mech_core>);
+Anvil.addShaped(<embers:mech_core>, [
+   [syrmoriteIngot, <betterwithmods:material:34>, <betterwithmods:material:34>, syrmoriteIngot],
+   [<betterwithmods:material:34>, <embers:plate_lead>, <embers:plate_lead>, <betterwithmods:material:34>],
+   [<betterwithmods:material:34>, <embers:plate_lead>, <embers:plate_lead>, <betterwithmods:material:34>],
+   [syrmoriteIngot, <betterwithmods:material:34>, <betterwithmods:material:34>, syrmoriteIngot]
+]);
+
+
+// Cauldron Recipes
+Cauldron.remove([<betterwithmods:material:6>]);
+Cauldron.remove([<betterwithmods:material:32>]);
+Cauldron.builder().buildRecipe([<betterwithmods:material:7>, <ore:rootsBark>], [<betterwithmods:material:6>]).setHeat(1).build();
+Cauldron.remove([<betterwithmods:material:27>]);
+Cauldron.addUnstoked([<betterwithmods:material:3>, <thebetweenlands:items_misc:18>, <thebetweenlands:firefly>], [<betterwithmods:material:27>]);
+
+
+
+// Crucible Recipes
+Crucible.remove([<betterwithmods:material:14>]);
+Crucible.addStoked([<betterwithmods:urn:8>, <thebetweenlands:items_misc:18>, <ore:ingotSyrmorite>], [<betterwithmods:material:14>, <betterwithmods:urn>]);
+
+
+
+// Saw Recipes
+Saw.remove([<betterwithmods:material>]);
+//Saw.remove([<betterwithmods:material> * 2]);
+
+Saw.add(<thebetweenlands:weedwood_planks>, [weedwood_sidings * 2]);
+Saw.add(<thebetweenlands:rubber_tree_planks>, [rubber_tree_sidings * 2]);
+Saw.add(<thebetweenlands:giant_root_planks>, [giant_root_sidings * 2]);
+Saw.add(<thebetweenlands:hearthgrove_planks>, [hearthgrove_sidings * 2]);
+Saw.add(<thebetweenlands:nibbletwig_planks>, [nibbletwig_sidings * 2]);
+
+Saw.add(weedwood_sidings, [weedwood_moulding * 2]);
+Saw.add(rubber_tree_sidings, [rubber_tree_moulding * 2]);
+Saw.add(giant_root_sidings, [giant_root_moulding * 2]);
+Saw.add(hearthgrove_sidings, [hearthgrove_moulding * 2]);
+Saw.add(nibbletwig_sidings, [nibbletwig_moulding * 2]);
+
+Saw.add(weedwood_moulding, [weedwood_corner * 2]);
+Saw.add(rubber_tree_moulding, [rubber_tree_corner * 2]);
+Saw.add(giant_root_moulding, [giant_root_corner * 2]);
+Saw.add(hearthgrove_moulding, [hearthgrove_corner * 2]);
+Saw.add(nibbletwig_moulding, [nibbletwig_corner * 2]);
+
+Saw.add(weedwood_corner, [<mystgears:gear_wood> * 2]);
+Saw.add(rubber_tree_corner, [<mystgears:gear_wood> * 2]);
+Saw.add(giant_root_corner, [<mystgears:gear_wood> * 2]);
+Saw.add(hearthgrove_corner, [<mystgears:gear_wood> * 2]);
+Saw.add(nibbletwig_corner, [<mystgears:gear_wood> * 2]);
+
+
+Saw.remove([<thebetweenlands:hearthgrove_planks>]);
+Saw.add(<thebetweenlands:log_hearthgrove:1> | <thebetweenlands:log_hearthgrove:3>, [<thebetweenlands:hearthgrove_planks>, <betterwithmods:material:15> * 2]);
+
+
+
+// Kiln
+Kiln.registerBlock(<thebetweenlands:mud_bricks>);
+
+
+
+// Turntable
+//Turntable.removeAll();
+Turntable.remove(<minecraft:clay>);
+Turntable.add(<thebetweenlands:mud>, <betterwithmods:unfired_pottery:0>, [<minecraft:clay_ball>]);
+
+
+
+// Misc recipes
+//JEI.removeAndHide(<betterwithmods:material:31>); // Cut leather
+//JEI.removeAndHide(<betterwithmods:material:32>); // Cut leather (Tanned)
+JEI.removeAndHide(<betterwithmods:material:33>); // Cut leather (Scoured)
+JEI.removeAndHide(<betterwithmods:material:0>); // wooden gear
+JEI.removeAndHide(<betterwithmods:shaft>);
+JEI.removeAndHide(<betterwithmods:single_machine>);
+JEI.removeAndHide(<betterwithmods:hand_crank>);
+JEI.removeAndHide(<betterwithmods:steel_helmet>);
+JEI.removeAndHide(<betterwithmods:steel_chest>);
+JEI.removeAndHide(<betterwithmods:steel_pants>);
+JEI.removeAndHide(<betterwithmods:steel_boots>);
+JEI.removeAndHide(<betterwithmods:material:42>); // plate armor
+
+
+recipes.removeByRecipeName("betterwithmods:items/material/material.padding");
+recipes.addShapeless("items/material/material.padding", <betterwithmods:material:41>, [<thebetweenlands:items_misc:3>, <ore:fabricHemp>]);
+
+
+recipes.remove(<betterwithmods:saw>);
+recipes.addShaped("blocks/mech/saw", <betterwithmods:saw>, 
+	[[<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>], 
+	 [<ore:gearWood>, <ore:hideBelt>, <ore:gearWood>], 
+	 [<ore:plankWood> | <betterwithmods:siding_wood>, <ore:gearWood>, <ore:plankWood> | <betterwithmods:siding_wood>]]);
+
+
+recipes.remove(<betterwithmods:axle_generator>);
+recipes.remove(<betterwithmods:axle_generator:2>);
+recipes.remove(<betterwithmods:material:10>);
+recipes.addShaped("items/material/material.wood_blade", <betterwithmods:material:10>, 
+	[[<ore:slabWood> | <betterwithmods:siding_wood>, null, null], 
+	 [<ore:slabWood> | <betterwithmods:siding_wood>, <roots:terra_moss>, <ore:slabWood> | <betterwithmods:siding_wood>], 
+	 [<ore:slabWood> | <betterwithmods:siding_wood>, null, null]]);
+
+recipes.remove(<betterwithmods:cooking_pot:1>);
+recipes.addShaped("blocks/mech/cauldron", <betterwithmods:cooking_pot:1>, 
+	[[<ore:ingotSyrmorite>, bone, <ore:ingotSyrmorite>],
+	 [<ore:ingotSyrmorite>, <thebetweenlands:bl_bucket>.withTag({Fluid: {FluidName: "swamp_water", Amount: 1000}}), <ore:ingotSyrmorite>],
+	 [<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>]]);
+
+recipes.remove(<betterwithmods:material:34>);
+recipes.addShaped("items/material/material.redstone_latch", <betterwithmods:material:34>, 
+	[[<ore:nuggetSyrmorite>, null, <ore:nuggetSyrmorite>],
+	 [<ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>],
+	 [null, <ore:nuggetSyrmorite>, null]]);
+
+recipes.remove(<betterwithmods:single_machine:3>); // Turntable
+recipes.addShaped("blocks/mech/single_machine_3", <betterwithmods:single_machine:3>, 
+	[[<ore:sidingWood>, <ore:sidingWood>, <ore:sidingWood>], 
+	 [<ore:stone>, <betterwithmods:material:34>, <ore:stone>], 
+	 [<ore:stone>, <ore:gearWood>, <ore:stone>]]);
+
+recipes.addShapeless("tanned_leather_knife", <betterwithmods:material:32>, [<betterwithmods:material:6>, <ore:knife>.transformDamage()]);
+recipes.addShapeless("tanned_cut_leather_knife", <betterwithmods:material:8> * 2, [<betterwithmods:material:32>, <ore:knife>.transformDamage()]);
+
+
+recipes.remove(<betterwithmods:single_machine:2>);
+recipes.addShaped("blocks/mech/single_machine_2", <betterwithmods:single_machine:2>, 
+	[[<ore:sidingWood>, <ore:sidingWood>, <ore:sidingWood>], 
+	 [<ore:gearWood>, <thebetweenlands:weedwood_plank_pressure_plate>, <ore:gearWood>], 
+	 [null, weedwood_corner, null]]);
+
+
+recipes.remove(<betterwithmods:hibachi>);
+recipes.addShaped("blocks/redstone/hibachi", <betterwithmods:hibachi>, 
+	[[<betterwithmods:material:17>, <betterwithmods:material:17>, <betterwithmods:material:17>], 
+	 [<thebetweenlands:smooth_cragrock>, <betterwithmods:material:27>, <thebetweenlands:smooth_cragrock>], 
+	 [<thebetweenlands:smooth_cragrock>, <betterwithmods:material:34>, <thebetweenlands:smooth_cragrock>]]);
+
+
+recipes.remove(<betterwithmods:bellows>);
+recipes.addShaped("blocks/mech/bellows", <betterwithmods:bellows>, 
+	[[<ore:sidingWood>, <ore:sidingWood>, <ore:sidingWood>], 
+	 [<ore:hideTanned>, <ore:hideTanned>, <ore:hideTanned>], 
+	 [<ore:hideBelt>, <ore:gearWood>, <ore:hideBelt>]]);
+
+
+
+
+// Renames
+<betterwithmods:material:3>.displayName = "Swamp Fibers";
+<betterwithmods:material:34>.displayName = "Syrmorite Latch"; // Redstone Latch

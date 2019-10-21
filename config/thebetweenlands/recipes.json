@@ -1,26 +1,5 @@
 {
 	"pestle_and_mortar": [
-		{
-			"input": {
-			  	"id": "thebetweenlands:items_misc",
-			  	"meta": 7
-			},
-			"output": {
-			  "id": "betterwithmods:material",
-			  "meta": 3,
-			  "size": 2
-			}
-		},
-		{
-			"input": {
-			  	"id": "thebetweenlands:items_misc",
-			  	"meta": 4
-			},
-			"output": {
-			  "id": "betterwithmods:material",
-			  "meta": 7
-			}
-		}
 	],
 	"purifier": [
 		{

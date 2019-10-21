@@ -24,6 +24,52 @@
         ]
       }
     },
+    "gold": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:gold_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 9
+      },
+      "cluster-count": 2,
+      "min-height": 0,
+      "max-height": 32,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "redstone": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:redstone_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 8
+      },
+      "cluster-count": 8,
+      "min-height": 0,
+      "max-height": 40,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
     "tin": {
       "enabled": "true",
       "distribution": "uniform",

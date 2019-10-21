@@ -4,6 +4,8 @@ import mods.roots.Fey;
 import mods.roots.FlowerGrowth;
 import mods.roots.Pyre;
 import mods.roots.RunicShears;
+import mods.roots.Ritual;
+import mods.roots.Transmutation;
 
 var knifeDict = <ore:knife>;
 
@@ -18,6 +20,10 @@ recipes.remove(<roots:stone_knife>);
 recipes.remove(<roots:iron_knife>);
 recipes.remove(<roots:diamond_knife>);
 recipes.remove(<roots:gold_knife>);
+
+recipes.remove(<roots:mortar>);
+recipes.remove(<roots:pestle>);
+
 
 mods.jei.JEI.hide(<roots:wood_knife>);
 mods.jei.JEI.hide(<roots:gold_knife>);
@@ -73,27 +79,13 @@ recipes.addShaped("grove_stone", <roots:grove_stone>,
 	 [<roots:wildroot>, <thebetweenlands:cragrock_bricks>, <roots:terra_moss>], 
 	 [<thebetweenlands:cragrock_brick_slab>, <thebetweenlands:cragrock_bricks>, <thebetweenlands:cragrock_brick_slab>]]);
 
+/*
 recipes.remove(<roots:component_pouch>);
 recipes.addShaped("component_pouch", <roots:component_pouch>, 
 	[[<betterwithmods:material:3> | <thebetweenlands:items_misc:7>, null, <betterwithmods:material:3> | <thebetweenlands:items_misc:7>], 
 	 [<thebetweenlands:items_misc:4>, <thebetweenlands:items_misc:4>, <thebetweenlands:items_misc:4>], 
 	 [<thebetweenlands:items_misc:4>, <ore:chestWood>, <thebetweenlands:items_misc:4>]]);
-
-recipes.remove(<roots:mortar>);
-recipes.addShaped("mortar", <roots:mortar>, 
-	[[<thebetweenlands:cragrock>, null, <thebetweenlands:cragrock>], 
-	 [<thebetweenlands:cragrock>, <thebetweenlands:items_misc:18>, <thebetweenlands:cragrock>], 
-	 [null, <thebetweenlands:cragrock>, null]]);
-
-recipes.remove(<roots:pestle>);
-recipes.addShaped("pestle2", <roots:pestle>, 
-	[[<thebetweenlands:cragrock>, <thebetweenlands:cragrock>, null], 
-	 [<thebetweenlands:cragrock>, <thebetweenlands:cragrock>, null], 
-	 [null, null, <thebetweenlands:cragrock>]]);
-recipes.addShaped("pestle", <roots:pestle>, 
-	[[null, null, <thebetweenlands:cragrock>], 
-	 [<thebetweenlands:cragrock>, <thebetweenlands:cragrock>, null], 
-	 [<thebetweenlands:cragrock>, <thebetweenlands:cragrock>, null]]);
+*/
 
 recipes.remove(<roots:imbuer>);
 recipes.addShaped("imbuer", <roots:imbuer>, 
@@ -154,24 +146,36 @@ Fey.removeRecipe(<roots:living_arrow>);
 Fey.addRecipe("living_arrow", <roots:living_arrow>, 
 	[<ore:treeLeaves>, <ore:treeLeaves>, <ore:rootsBark>, <roots:wildroot>, <thebetweenlands:items_misc:21>]);
 
+Fey.removeRecipe(<roots:elemental_soil>);
+Fey.addRecipe("elemental_soil", <roots:elemental_soil>, 
+	[<thebetweenlands:swamp_dirt>, <thebetweenlands:silt>, <roots:terra_moss>, <roots:wildroot>, <minecraft:dye:15>]);
+
 //Fey.removeRecipe(<roots:living_hoe>);
 
 
 
 
 // Pyre Crafting
-Pyre.addRecipe("soulsand", <minecraft:soul_sand>, 
-	[<thebetweenlands:gecko>, <thebetweenlands:items_crushed:17>, <thebetweenlands:items_crushed:17>, <thebetweenlands:items_misc:14>, <thebetweenlands:coarse_swamp_dirt>]);
-
-
 Pyre.addRecipe("embers_manual", <embers:codex>, 
 	[<minecraft:book>, <ore:ingotOctine>, <ore:ingotOctine>, <thebetweenlands:items_misc:10>, <thebetweenlands:items_misc:10>]);
+
+Pyre.removeRecipe(<roots:cloud_berry>);
+Pyre.addRecipe("cloud_berry", <roots:cloud_berry>, 
+	[<thebetweenlands:swamp_tallgrass>, <thebetweenlands:shelf_fungus>, <ore:treeLeaves>, <roots:terra_moss>, <roots:terra_moss>]);
 
 
 
 
 // Runic Shears
 RunicShears.addEntityRecipe("pods_from_roots", <thebetweenlands:root_pod> * 2, <entity:thebetweenlands:root_sprite>, 120 * 20);
+RunicShears.addEntityRecipe("lurkerskin_from_roots", <thebetweenlands:items_misc:4>, <entity:thebetweenlands:lurker>, 120 * 20);
+
+
+
+
+// RITUALS
+Ritual.modifyRitual("ritual_transmutation", 
+	[<roots:chiseled_runestone>, <roots:cloud_berry>, <thaumcraft:salis_mundus>, <arcanearchives:radiant_dust>, <roots:bark_oak>]);
 
 
 
@@ -205,6 +209,16 @@ FlowerGrowth.addRecipeBlock("thebetweenlands_shoots", <thebetweenlands:shoots>.a
 FlowerGrowth.addRecipeBlock("thebetweenlands_sludgecreep", <thebetweenlands:sludgecreep>.asBlock(), 0);
 FlowerGrowth.addRecipeBlock("thebetweenlands_soft_rush", <thebetweenlands:soft_rush>.asBlock(), 0);
 FlowerGrowth.addRecipeBlock("thebetweenlands_dead_weedwood_bush", <thebetweenlands:dead_weedwood_bush>.asBlock(), 0);
+
+
+
+
+// TRANSMUTATION RITUAL
+Transmutation.addBlockToBlockRecipe("weedwood_to_greatwood", <blockstate:thebetweenlands:sapling_weedwood>, <blockstate:thaumcraft:sapling_greatwood>);
+Transmutation.addBlockToBlockRecipe("nibbletwig_to_silverwood", <blockstate:thebetweenlands:sapling_nibbletwig>, <blockstate:thaumcraft:sapling_silverwood>);
+
+
+
 
 
 

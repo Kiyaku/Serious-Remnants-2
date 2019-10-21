@@ -1,0 +1,7 @@
+{
+  "parent": "advancedmortars:block/mortar",
+  "textures": {
+    "mortar": "thebetweenlands:blocks/slimy_bone_block",
+    "particle": "thebetweenlands:blocks/slimy_bone_block"
+  }
+}

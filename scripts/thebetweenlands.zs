@@ -57,7 +57,10 @@ recipes.addShaped("weedwood_chest", <thebetweenlands:weedwood_chest>,
 	[<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>]]);
 
 
-recipes.addShaped("syrmorite_ingot_to_plate", <jaopca:item_platesyrmorite>, 
-	[[<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>]]);
+//recipes.addShaped("syrmorite_ingot_to_plate", <jaopca:item_platesyrmorite>, 
+//	[[<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>]]);
 
 recipes.remove(<thebetweenlands:purifier>);
+recipes.remove(<thebetweenlands:items_misc:11>); // syrmorite ingot
+recipes.remove(<thebetweenlands:syrmorite_block>);
+recipes.remove(<betweenores:syrmorite_nugget>);

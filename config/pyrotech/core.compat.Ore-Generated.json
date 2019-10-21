@@ -23,14 +23,13 @@
     "oreCopper": {
       "slagColor": "ffaa1c",
       "langKey": [
+        "betweenores:tile.betweenores.copper_ore",
         "embers:tile.ore_copper",
-        "metallurgy:tile.metallurgy.carmot_ore",
         "metallurgy:tile.metallurgy.copper_ore",
         "mysticalworld:tile.copper_ore"
       ],
       "output": [
         "embers:nugget_copper:0",
-        "metallurgy:carmot_nugget:0",
         "metallurgy:copper_nugget:0",
         "mysticalworld:copper_nugget:0",
         "thaumcraft:nugget:1"
@@ -39,6 +38,7 @@
     "oreGold": {
       "slagColor": "fcee4b",
       "langKey": [
+        "betweenores:tile.betweenores.gold_ore",
         "minecraft:tile.oreGold"
       ],
       "output": [
@@ -48,6 +48,7 @@
     "oreIron": {
       "slagColor": "d8af93",
       "langKey": [
+        "betweenores:tile.betweenores.iron_ore",
         "minecraft:tile.oreIron"
       ],
       "output": [
@@ -58,6 +59,7 @@
     "oreLead": {
       "slagColor": "95afee",
       "langKey": [
+        "betweenores:tile.betweenores.lead_ore",
         "embers:tile.ore_lead"
       ],
       "output": [
@@ -72,6 +74,15 @@
       ],
       "output": [
         "metallurgy:mithril_nugget:0"
+      ]
+    },
+    "oreOctine": {
+      "slagColor": "ffaa22",
+      "langKey": [
+        "thebetweenlands:tile.thebetweenlands.octine_ore"
+      ],
+      "output": [
+        "betweenores:octine_nugget:0"
       ]
     },
     "oreOsmium": {
@@ -95,22 +106,31 @@
     "oreSilver": {
       "slagColor": "e8f6fd",
       "langKey": [
+        "betweenores:tile.betweenores.silver_ore",
         "embers:tile.ore_silver",
-        "iceandfire:tile.iceandfire.silverOre",
         "metallurgy:tile.metallurgy.silver_ore",
         "mysticalworld:tile.silver_ore"
       ],
       "output": [
         "embers:nugget_silver:0",
-        "iceandfire:silver_nugget:0",
         "metallurgy:silver_nugget:0",
         "mysticalworld:silver_nugget:0",
         "thaumcraft:nugget:3"
       ]
     },
+    "oreSyrmorite": {
+      "slagColor": "4455bb",
+      "langKey": [
+        "thebetweenlands:tile.thebetweenlands.syrmorite_ore"
+      ],
+      "output": [
+        "betweenores:syrmorite_nugget:0"
+      ]
+    },
     "oreTin": {
       "slagColor": "c3e9ff",
       "langKey": [
+        "betweenores:tile.betweenores.tin_ore",
         "embers:tile.ore_tin",
         "metallurgy:tile.metallurgy.tin_ore"
       ],

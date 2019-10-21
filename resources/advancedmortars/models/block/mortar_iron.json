@@ -1,0 +1,7 @@
+{
+  "parent": "advancedmortars:block/mortar",
+  "textures": {
+    "mortar": "thebetweenlands:blocks/syrmorite_block",
+    "particle": "thebetweenlands:blocks/syrmorite_block"
+  }
+}

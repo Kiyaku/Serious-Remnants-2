@@ -1,13 +1,14 @@
-setTitle("Soulforged Steel Anvil")
+setTitle("Blacksmith Workstation")
 
-setIcon("betterwithmods:steel_anvil")
+setIcon(<artisanworktables:workstation, meta:3>)
 
-setDescription("Craft a Soulforged Steel Anvil")
+setDescription("Craft a Blacksmith Workstation")
 
 addParent("triumph:pack/root")
 
 //Criteria
 criteria = addCriteria("crafted", "triumph:player_crafted_item")
-criteria.setItem("betterwithmods:steel_anvil")
+criteria.setItem(<artisanworktables:workstation, meta:3>)
+
 
 addRewardFunction("triumph:ore_tier_2_trigger")

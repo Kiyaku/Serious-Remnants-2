@@ -150,23 +150,25 @@
         "pyrotech:survive/campfire",
         "pyrotech:innovate/storage_durable",
         "pyrotech:innovate/combustion_machines",
-        "pyrotech:innovate/stone_crucible"
+        "pyrotech:innovate/stone_crucible",
+        "pyrotech:gather/limestone",
+        "pyrotech:bloom/tongs"
       ],
       "bookmarks": [],
       "history": [
-        "pyrotech:bloom/anvil_ironclad",
-        "pyrotech:adapt/anvil_granite",
+        "pyrotech:bloom/tongs",
+        "pyrotech:gather/shard_bone_and_flint",
         "pyrotech:innovate/refractory_brick",
+        "pyrotech:adapt/anvil_granite",
+        "pyrotech:gather/limestone",
+        "pyrotech:innovate/mechanical_hopper",
+        "pyrotech:bloom/anvil_ironclad",
+        "pyrotech:accelerate/bloomery",
+        "pyrotech:bloom/living_tar",
         "pyrotech:survive/rocks",
         "pyrotech:gather/storage",
         "pyrotech:innovate/stone_crucible",
-        "pyrotech:innovate/combustion_machines",
-        "pyrotech:innovate/storage_durable",
-        "pyrotech:survive/campfire",
-        "pyrotech:survive/flint_and_tinder",
-        "pyrotech:appendix/ignition",
-        "pyrotech:innovate/bow_drill",
-        "pyrotech:gather/sticks"
+        "pyrotech:innovate/combustion_machines"
       ],
       "completedManualQuests": []
     },
@@ -239,11 +241,13 @@
         "mysticalworld:locations/barrows",
         "mysticalworld:features/burnt_trees",
         "mysticalworld:blocks/mud_blocks",
-        "mysticalworld:blocks/charred_wood"
+        "mysticalworld:blocks/charred_wood",
+        "mysticalworld:creatures/silkworm"
       ],
       "bookmarks": [],
       "history": [
         "mysticalworld:creatures/beetle",
+        "mysticalworld:creatures/silkworm",
         "mysticalworld:blocks/charred_wood",
         "mysticalworld:blocks/mud_blocks",
         "mysticalworld:features/burnt_trees",
@@ -254,8 +258,7 @@
         "mysticalworld:creatures/endermini",
         "mysticalworld:creatures/deer",
         "mysticalworld:creatures/frog",
-        "mysticalworld:creatures/sprout",
-        "mysticalworld:creatures/squid"
+        "mysticalworld:creatures/sprout"
       ],
       "completedManualQuests": []
     },
@@ -311,23 +314,29 @@
         "roots:rituals/ritual_fire_storm",
         "roots:apparatus/living_tools",
         "roots:apparatus/wildwood_bow",
-        "roots:rituals/ritual_divine_protection"
+        "roots:rituals/ritual_divine_protection",
+        "roots:spells/spell_harvest",
+        "roots:spells/spell_acid_cloud",
+        "roots:spells/spell_light_drifter",
+        "roots:apparatus/mortar",
+        "roots:spells/spell_petal_shell",
+        "roots:rituals/automation"
       ],
       "bookmarks": [],
       "history": [
+        "roots:rituals/ritual_transmutation",
+        "roots:rituals/automation",
+        "roots:spells/spell_petal_shell",
+        "roots:apparatus/mortar",
+        "roots:spells/spell_grove_supplication",
+        "roots:spells/spell_light_drifter",
+        "roots:spells/spell_acid_cloud",
+        "roots:spells/spell_harvest",
+        "roots:basics/crafting",
+        "roots:apparatus/sylvan_armor",
         "roots:rituals/ritual_summon_creatures",
         "roots:rituals/ritual_divine_protection",
-        "roots:apparatus/living_tools",
-        "roots:apparatus/wildwood_bow",
-        "roots:rituals/ritual_transmutation",
-        "roots:rituals/ritual_purity",
-        "roots:rituals/ritual_fire_storm",
-        "roots:apparatus/sylvan_armor",
-        "roots:resources/petals",
-        "roots:rituals/ritual_flower_growth",
-        "roots:resources/fey_leather",
-        "roots:apparatus/runic_shears",
-        "roots:basics/crafting"
+        "roots:apparatus/living_tools"
       ],
       "completedManualQuests": []
     }
