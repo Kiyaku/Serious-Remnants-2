@@ -2,8 +2,8 @@
   {
     "minheight": 75,
     "hostile": true,
-    "mob": ["thebetweenlands:swamp_hag","thebetweenlands:wight", "thebetweenlands:boulder_sprite"],
-    "biome": ["thebetweenlands:coarse_islands", "thebetweenlands:swamplands", "thebetweenlands:patchy_islands"],
+    "mob": ["thebetweenlands:swamp_hag", "thebetweenlands:wight", "thebetweenlands:boulder_sprite"],
+    "biome": ["Patchy Islands", "Coarse Islands"],
     "result": "deny"
   }
 ]

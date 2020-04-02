@@ -33,6 +33,7 @@ recipes.remove(<thebetweenlands:valonite_shield>);
 recipes.remove(<jaopca:item_stickvalonite>);
 
 // Furnace
+furnace.remove(<thebetweenlands:items_misc:11>);
 furnace.remove(<thebetweenlands:octine_ingot>);
 furnace.remove(<thebetweenlands:items_misc:10>); // mud bricks
 furnace.remove(<minecraft:brick>);
@@ -50,17 +51,36 @@ recipes.addShaped("thebetweenlands_herblore_book", <thebetweenlands:manual_hl>,
 	[[<minecraft:book>, <ore:allFlowers>]]);
 
 
-recipes.remove(<thebetweenlands:weedwood_chest>);
-recipes.addShaped("weedwood_chest", <thebetweenlands:weedwood_chest>, 
-	[[<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>], 
-	[<thebetweenlands:weedwood_planks>, <ore:nuggetSyrmorite>, <thebetweenlands:weedwood_planks>], 
-	[<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>]]);
-
-
-//recipes.addShaped("syrmorite_ingot_to_plate", <jaopca:item_platesyrmorite>, 
-//	[[<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>]]);
-
 recipes.remove(<thebetweenlands:purifier>);
 recipes.remove(<thebetweenlands:items_misc:11>); // syrmorite ingot
 recipes.remove(<thebetweenlands:syrmorite_block>);
 recipes.remove(<betweenores:syrmorite_nugget>);
+
+furnace.addRecipe(<contenttweaker:hide_clean>, <contenttweaker:hide_soaked>, 1);
+
+
+recipes.remove(<thebetweenlands:lurker_skin_helmet>);
+recipes.addShaped("lurker_skin_helmet", <thebetweenlands:lurker_skin_helmet>, [
+	[<contenttweaker:hide_clean>, <contenttweaker:hide_clean>, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>]
+]);
+
+recipes.remove(<thebetweenlands:lurker_skin_chestplate>);
+recipes.addShaped("lurker_skin_chestplate", <thebetweenlands:lurker_skin_chestplate>, [
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, <contenttweaker:hide_clean>, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, <contenttweaker:hide_clean>, <contenttweaker:hide_clean>]
+]);
+
+recipes.remove(<thebetweenlands:lurker_skin_leggings>);
+recipes.addShaped("lurker_skin_leggings", <thebetweenlands:lurker_skin_leggings>, [
+	[<contenttweaker:hide_clean>, <contenttweaker:hide_clean>, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>]
+]);
+
+recipes.remove(<thebetweenlands:lurker_skin_boots>);
+recipes.addShaped("lurker_skin_boots", <thebetweenlands:lurker_skin_boots>, [
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>],
+	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>]
+]);

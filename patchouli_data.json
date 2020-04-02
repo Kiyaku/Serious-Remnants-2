@@ -15,14 +15,14 @@
       ],
       "bookmarks": [],
       "history": [
-        "tinkersforging:temperature/charcoal_forge",
-        "tinkersforging:temperature/brick_forge",
         "tinkersforging:temperature/melting_points",
-        "tinkersforging:forging/getting_started",
+        "tinkersforging:temperature/brick_forge",
         "tinkersforging:forging/rules",
         "tinkersforging:forging/tinkers_anvil",
+        "tinkersforging:forging/getting_started",
+        "tinkersforging:items/armor",
         "tinkersforging:items/tinkers_hammer",
-        "tinkersforging:items/armor"
+        "tinkersforging:temperature/charcoal_forge"
       ],
       "completedManualQuests": []
     },
@@ -152,10 +152,17 @@
         "pyrotech:innovate/combustion_machines",
         "pyrotech:innovate/stone_crucible",
         "pyrotech:gather/limestone",
-        "pyrotech:bloom/tongs"
+        "pyrotech:bloom/tongs",
+        "pyrotech:bloom/mechanical_bellows",
+        "pyrotech:bloom/cog_advanced"
       ],
       "bookmarks": [],
       "history": [
+        "pyrotech:gather/storage",
+        "pyrotech:bloom/mechanical_bellows",
+        "pyrotech:bloom/cog_advanced",
+        "pyrotech:innovate/cog_basic",
+        "pyrotech:accelerate/bellows",
         "pyrotech:bloom/tongs",
         "pyrotech:gather/shard_bone_and_flint",
         "pyrotech:innovate/refractory_brick",
@@ -163,12 +170,7 @@
         "pyrotech:gather/limestone",
         "pyrotech:innovate/mechanical_hopper",
         "pyrotech:bloom/anvil_ironclad",
-        "pyrotech:accelerate/bloomery",
-        "pyrotech:bloom/living_tar",
-        "pyrotech:survive/rocks",
-        "pyrotech:gather/storage",
-        "pyrotech:innovate/stone_crucible",
-        "pyrotech:innovate/combustion_machines"
+        "pyrotech:accelerate/bloomery"
       ],
       "completedManualQuests": []
     },

@@ -20,17 +20,25 @@
     "Output item strings are in the format: (domain):(path):(meta)"
   ],
   "oredict": {
+    "oreAluminum": {
+      "slagColor": "e2e2e3",
+      "langKey": [
+        "geolosys:geolosys.cluster.aluminum"
+      ],
+      "output": [
+        "jaopca:item_nuggetaluminium:0"
+      ]
+    },
     "oreCopper": {
       "slagColor": "ffaa1c",
       "langKey": [
         "betweenores:tile.betweenores.copper_ore",
         "embers:tile.ore_copper",
-        "metallurgy:tile.metallurgy.copper_ore",
+        "geolosys:geolosys.cluster.copper",
         "mysticalworld:tile.copper_ore"
       ],
       "output": [
         "embers:nugget_copper:0",
-        "metallurgy:copper_nugget:0",
         "mysticalworld:copper_nugget:0",
         "thaumcraft:nugget:1"
       ]
@@ -39,6 +47,7 @@
       "slagColor": "fcee4b",
       "langKey": [
         "betweenores:tile.betweenores.gold_ore",
+        "geolosys:geolosys.cluster.gold",
         "minecraft:tile.oreGold"
       ],
       "output": [
@@ -49,6 +58,7 @@
       "slagColor": "d8af93",
       "langKey": [
         "betweenores:tile.betweenores.iron_ore",
+        "geolosys:geolosys.cluster.iron",
         "minecraft:tile.oreIron"
       ],
       "output": [
@@ -60,20 +70,21 @@
       "slagColor": "95afee",
       "langKey": [
         "betweenores:tile.betweenores.lead_ore",
-        "embers:tile.ore_lead"
+        "embers:tile.ore_lead",
+        "geolosys:geolosys.cluster.lead"
       ],
       "output": [
         "embers:nugget_lead:0",
         "thaumcraft:nugget:4"
       ]
     },
-    "oreMithril": {
-      "slagColor": "9cf9ff",
+    "oreNickel": {
+      "slagColor": "e4e5d8",
       "langKey": [
-        "metallurgy:tile.metallurgy.mithril_ore"
+        "geolosys:geolosys.cluster.nickel"
       ],
       "output": [
-        "metallurgy:mithril_nugget:0"
+        "jaopca:item_nuggetnickel:0"
       ]
     },
     "oreOctine": {
@@ -82,25 +93,8 @@
         "thebetweenlands:tile.thebetweenlands.octine_ore"
       ],
       "output": [
-        "betweenores:octine_nugget:0"
-      ]
-    },
-    "oreOsmium": {
-      "slagColor": "9babc4",
-      "langKey": [
-        "metallurgy:tile.metallurgy.osmium_ore"
-      ],
-      "output": [
-        "metallurgy:osmium_nugget:0"
-      ]
-    },
-    "orePlatinum": {
-      "slagColor": "55f3ff",
-      "langKey": [
-        "metallurgy:tile.metallurgy.platinum_ore"
-      ],
-      "output": [
-        "metallurgy:platinum_nugget:0"
+        "betweenores:octine_nugget:0",
+        "thebetweenlands:items_misc:42"
       ]
     },
     "oreSilver": {
@@ -108,12 +102,11 @@
       "langKey": [
         "betweenores:tile.betweenores.silver_ore",
         "embers:tile.ore_silver",
-        "metallurgy:tile.metallurgy.silver_ore",
+        "geolosys:geolosys.cluster.silver",
         "mysticalworld:tile.silver_ore"
       ],
       "output": [
         "embers:nugget_silver:0",
-        "metallurgy:silver_nugget:0",
         "mysticalworld:silver_nugget:0",
         "thaumcraft:nugget:3"
       ]
@@ -124,7 +117,8 @@
         "thebetweenlands:tile.thebetweenlands.syrmorite_ore"
       ],
       "output": [
-        "betweenores:syrmorite_nugget:0"
+        "betweenores:syrmorite_nugget:0",
+        "thebetweenlands:items_misc:41"
       ]
     },
     "oreTin": {
@@ -132,11 +126,10 @@
       "langKey": [
         "betweenores:tile.betweenores.tin_ore",
         "embers:tile.ore_tin",
-        "metallurgy:tile.metallurgy.tin_ore"
+        "geolosys:geolosys.cluster.tin"
       ],
       "output": [
         "embers:nugget_tin:0",
-        "metallurgy:tin_nugget:0",
         "thaumcraft:nugget:2"
       ]
     }

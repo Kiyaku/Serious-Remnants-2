@@ -20,6 +20,87 @@ global octinePlate as IItemStack = <jaopca:item_plateoctine>;
 global valonitePlate as IItemStack = <jaopca:item_platevalonite>;
 
 
+global metalTypes as IOreDictEntry[string][string] = {
+	syrmorite: {
+		ore: <ore:oreSyrmorite>,
+		block: <ore:blockSyrmorite>,
+		nugget: <ore:nuggetSyrmorite>,
+		ingot: <ore:ingotSyrmorite>,
+		plate: <ore:plateSyrmorite>
+	},
+	octine: {
+		ore: <ore:oreOctine>,
+		block: <ore:blockOctine>,
+		nugget: <ore:nuggetOctine>,
+		ingot: <ore:ingotOctine>,
+		plate: <ore:plateOctine>
+	},
+	valonite: {
+		ore: <ore:oreValonite>,
+		block: <ore:blockValonite>,
+		nugget: <ore:nuggetValonite>,
+		ingot: <ore:gemValonite>,
+		plate: <ore:plateValonite>
+	},
+	gold: {
+		ore: <ore:oreGold>,
+		block: <ore:blockGold>,
+		nugget: <ore:nuggetGold>,
+		ingot: <ore:ingotGold>,
+		plate: <ore:plateGold>
+	},
+	copper: {
+		ore: <ore:oreCopper>,
+		block: <ore:blockCopper>,
+		nugget: <ore:nuggetCopper>,
+		ingot: <ore:ingotCopper>,
+		plate: <ore:plateCopper>
+	},
+	tin: {
+		ore: <ore:oreTin>,
+		block: <ore:blockTin>,
+		nugget: <ore:nuggetTin>,
+		ingot: <ore:ingotTin>,
+		plate: <ore:plateTin>
+	},
+	silver: {
+		ore: <ore:oreSilver>,
+		block: <ore:blockSilver>,
+		nugget: <ore:nuggetSilver>,
+		ingot: <ore:ingotSilver>,
+		plate: <ore:plateSilver>
+	},
+	lead: {
+		ore: <ore:oreLead>,
+		block: <ore:blockLead>,
+		nugget: <ore:nuggetLead>,
+		ingot: <ore:ingotLead>,
+		plate: <ore:plateLead>
+	},
+	dawnstone: {
+		ore: null,
+		block: <ore:blockDawnstone>,
+		nugget: <ore:nuggetDawnstone>,
+		ingot: <ore:ingotDawnstone>,
+		plate: <ore:plateDawnstone>
+	},
+	bronze: {
+		ore: null,
+		block: <ore:blockBronze>,
+		nugget: <ore:nuggetBronze>,
+		ingot: <ore:ingotBronze>,
+		plate: <ore:plateBronze>
+	}
+} as IOreDictEntry[string][string];
+
+
+// Fix Metal ore dicts
+<ore:ingotCopper>.remove(<mysticalworld:copper_ingot>);
+<ore:ingotSilver>.remove(<mysticalworld:silver_ingot>);
+
+<ore:blockCopper>.remove(<mysticalworld:copper_block>);
+<ore:blockSilver>.remove(<mysticalworld:silver_block>);
+
 <ore:paper>.add(<thebetweenlands:items_misc:32>);
 
 
@@ -90,8 +171,8 @@ oreAllFlowers.add(<thebetweenlands:dead_weedwood_bush>);
 
 
 val oreIngotIron = <ore:ingotIron>;
-oreIngotIron.remove(<minecraft:iron_ingot>);
-oreIngotIron.add(syrmoriteIngot);
+//oreIngotIron.remove(<minecraft:iron_ingot>);
+//oreIngotIron.add(syrmoriteIngot);
 
 val orePlateIron = <ore:plateIron>;
 for item in orePlateIron.items {

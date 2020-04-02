@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "pyrotech:rock"
+          ]
+        }
+      },
+      "drops": [
+        {
+          "item": {
+            "items" : [
+              "tfc:rock/granite"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

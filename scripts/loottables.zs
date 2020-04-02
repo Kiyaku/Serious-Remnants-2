@@ -14,6 +14,7 @@ val dungeon_pot = dungeon_pot_loot.getPool("dungeon_pot");
 val common_chest = common_chest_loot.getPool("common_chest");
 val dungeon_chest = dungeon_chest_loot.getPool("dungeon_chest");
 
+/*
 common_pot.removeEntry("syrmorite_ingot");
 dungeon_pot.removeEntry("syrmorite_ingot");
 common_chest.removeEntry("syrmorite_ingot");
@@ -23,4 +24,4 @@ common_pot.addItemEntryHelper(<betweenores:syrmorite_nugget>, 10, 0, [Functions.
 dungeon_pot.addItemEntryHelper(<betweenores:syrmorite_nugget>, 20, 0, [Functions.setCount(4, 16)], []);
 common_chest.addItemEntryHelper(<betweenores:syrmorite_nugget>, 30, 0, [Functions.setCount(4, 16)], []);
 dungeon_chest.addItemEntryHelper(<betweenores:syrmorite_nugget>, 20, 0, [Functions.setCount(4, 16)], []);
-
+*/

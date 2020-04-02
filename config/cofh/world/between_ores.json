@@ -116,6 +116,52 @@
         ]
       }
     },
+    "lapis": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:lapis_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 7
+      },
+      "cluster-count": 1,
+      "min-height": 0,
+      "max-height": 31,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "quartz": {
+      "enabled": "true",
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "betweenores:quartz_ore"
+        },
+        "material": "thebetweenlands:pitstone",
+        "cluster-size": 8
+      },
+      "cluster-count": 4,
+      "min-height": 0,
+      "max-height": 18,
+      "retrogen": "true",
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
     "silver": {
       "enabled": "true",
       "distribution": "uniform",

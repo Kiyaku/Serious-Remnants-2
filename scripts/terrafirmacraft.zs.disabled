@@ -1,0 +1,4 @@
+import mods.terrafirmacraft.Chisel;
+// Adds a recipe with the given parameters
+Chisel.addRecipe("betweenstone_to_smooth", <thebetweenlands:betweenstone>, <thebetweenlands:smooth_betweenstone>);
+Chisel.addRecipe("betweenstone_to_slab", <thebetweenlands:betweenstone>, <thebetweenlands:betweenstone_slab>);

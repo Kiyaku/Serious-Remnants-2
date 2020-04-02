@@ -25,6 +25,8 @@ recipes.remove(<minecraft:paper>);
 recipes.remove(<minecraft:lever>);
 recipes.remove(<minecraft:clay_ball>);
 recipes.remove(<minecraft:clay>);
+recipes.remove(<minecraft:furnace>);
+recipes.remove(<minecraft:ladder>);
 
 recipes.remove(<minecraft:bookshelf>);
 

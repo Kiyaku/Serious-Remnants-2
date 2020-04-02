@@ -1,12 +1,13 @@
 {
     "forge_marker": 1,
     "defaults": {
-        "model": "naturesaura:nature_altar",
         "textures": {
-            "texture": "minecraft:blocks/log_oak",
-            "top": "minecraft:blocks/log_oak",
-            "particle": "#top"
+            "texture": "contenttweaker:blocks/scraping_block_side",
+            "top": "contenttweaker:blocks/scraping_block_0",
+            "particle": "#texture"
         },
+        "model": "contenttweaker:scraping_block",
+        "uvlock": true,
         "transform": "forge:default-block"
     },
     "variants": {

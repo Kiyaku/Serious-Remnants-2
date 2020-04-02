@@ -1,5 +1,6 @@
-ignoreUpdate:55
+ignoreUpdate:60
 updateNotification:true
+differentiateByServerAddress:true
 debug:false
 lighting:false
 colours:0
@@ -11,4 +12,6 @@ footsteps:true
 flowers:true
 compression:false
 coordinates:true
-globalVersion:23
+biomeColorsVanillaMode:false
+waypoints:true
+globalVersion:32

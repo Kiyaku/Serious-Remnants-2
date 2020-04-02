@@ -9,8 +9,8 @@ JEI.removeAndHide(<advancedmortars:mortar:6>);
 
 recipes.addShaped("mortar_wood", <advancedmortars:mortar:0>, 
 	[[null, null, <ore:stickWood>], 
-	[<thebetweenlands:slimy_bone_block>, <pyrotech:material:11>, <thebetweenlands:slimy_bone_block>], 
-	[null, <thebetweenlands:slimy_bone_block>, null]]);
+	[bone, <pyrotech:material:11>, bone], 
+	[null, bone, null]]);
 
 
 
@@ -27,8 +27,8 @@ Mortar.addRecipe(["wood", "iron", "diamond", "gold"], <minecraft:dye:15> * 4, 8,
 
 // Limestone flux to crushed limestone
 Mortar.addRecipe(["wood", "iron", "diamond", "gold"], <pyrotech:material:28>, 8, [<thebetweenlands:items_misc:27>]);
-
 Mortar.addRecipe(["wood", "iron", "diamond", "gold"], <thaumcraft:salis_mundus> * 2, 8, [<ore:visCrystals> * 3, <arcanearchives:radiant_dust>]);
+Mortar.addRecipe(["wood", "iron", "diamond", "gold"], <embers:blend_caminite> * 8, 8, [<minecraft:clay_ball> * 4, <thebetweenlands:silt>]);
 
 
 

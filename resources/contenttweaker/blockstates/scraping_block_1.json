@@ -1,13 +1,14 @@
 {
     "forge_marker": 1,
     "defaults": {
-        "model": "naturesaura:nature_altar",
         "textures": {
             "texture": "contenttweaker:blocks/scraping_block_side",
             "top": "contenttweaker:blocks/scraping_block_0",
             "particle": "#top"
         },
-        "transform": "forge:default-block"
+    "model": "contenttweaker:scraping_block",
+    "uvlock": true,
+    "transform": "forge:default-block"
     },
     "variants": {
         "normal": [{}],

@@ -1,5 +1,15 @@
 {
 	"pestle_and_mortar": [
+		{
+			"input": {
+				"id": "thebetweenlands:items_misc",
+			  	"meta": 27
+			},
+			"output": {
+				"id": "pyrotech:material",
+			  	"meta": 28
+			}
+		}
 	],
 	"purifier": [
 		{

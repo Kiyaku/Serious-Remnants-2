@@ -111,19 +111,19 @@ Fey.addRecipe("runic_shears", <roots:runic_shears>,
 
 Fey.removeRecipe(<roots:sylvan_helmet>);
 Fey.addRecipe("sylvan_helmet", <roots:sylvan_helmet>, 
-	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:syrmorite_helmet>]);
+	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:bone_helmet>]);
 
 Fey.removeRecipe(<roots:sylvan_chestplate>);
 Fey.addRecipe("sylvan_chestplate", <roots:sylvan_chestplate>, 
-	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:syrmorite_chestplate>]);
+	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:bone_chestplate>]);
 
 Fey.removeRecipe(<roots:sylvan_leggings>);
 Fey.addRecipe("sylvan_leggings", <roots:sylvan_leggings>, 
-	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:syrmorite_leggings>]);
+	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:bone_leggings>]);
 
 Fey.removeRecipe(<roots:sylvan_boots>);
 Fey.addRecipe("sylvan_boots", <roots:sylvan_boots>, 
-	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:syrmorite_boots>]);
+	[<roots:fey_leather>, <thebetweenlands:moss>, <roots:bark_birch>, <arcanearchives:raw_quartz>, <thebetweenlands:bone_boots>]);
 
 
 Fey.removeRecipe(<roots:living_pickaxe>);
@@ -216,8 +216,6 @@ FlowerGrowth.addRecipeBlock("thebetweenlands_dead_weedwood_bush", <thebetweenlan
 // TRANSMUTATION RITUAL
 Transmutation.addBlockToBlockRecipe("weedwood_to_greatwood", <blockstate:thebetweenlands:sapling_weedwood>, <blockstate:thaumcraft:sapling_greatwood>);
 Transmutation.addBlockToBlockRecipe("nibbletwig_to_silverwood", <blockstate:thebetweenlands:sapling_nibbletwig>, <blockstate:thaumcraft:sapling_silverwood>);
-
-
 
 
 
