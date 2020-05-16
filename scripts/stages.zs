@@ -9,6 +9,9 @@ OreStages.addReplacement("ore_tier_2", <betweenores:lead_ore>, <thebetweenlands:
 OreStages.addReplacement("ore_tier_2", <betweenores:silver_ore>, <thebetweenlands:pitstone>);
 OreStages.addReplacement("ore_tier_2", <betweenores:redstone_ore>, <thebetweenlands:pitstone>);
 
+OreStages.addReplacement("sky", <minecraft:glass>, <thebetweenlands:energy_barrier_mud>);
+
+
 
 val recipeStages = {
 	"syrmorite" : [ 
