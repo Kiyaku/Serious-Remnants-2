@@ -1,3 +1,49 @@
 {
-
+  "dependencies": "thebetweenlands",
+  "populate": {
+    "syrmorite_top": {
+      "distribution": "cave",
+      "generator": {
+      	"type": "sparse-cluster",
+        "block": {
+          "name": "thebetweenlands:syrmorite_ore"
+        },
+        "material": "thebetweenlands:betweenstone",
+        "cluster-size": 12
+      },
+      "cluster-count": 10,
+      "min-height": 0,
+      "max-height": 100,
+      "ceiling": true,
+      "retrogen": true,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [
+          20
+        ]
+      }
+    },
+    "syrmorite_bottom": {
+      "distribution": "cave",
+      "generator": {
+      	"type": "sparse-cluster",
+        "block": {
+          "name": "thebetweenlands:syrmorite_ore"
+        },
+        "material": "thebetweenlands:betweenstone",
+        "cluster-size": 12
+      },
+      "cluster-count": 10,
+      "ceiling": false,
+      "retrogen": true,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [
+          20
+        ]
+      }
+    }
+  }
 }

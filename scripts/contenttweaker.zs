@@ -17,9 +17,9 @@ syromiteArmorPiece.register();
 
 // Extra Hide
 val extraItems = [
-	"hide_scraped",
-	"hide_soaked",
-	"hide_clean"
+	//"hide_scraped",
+	//"hide_soaked",
+	//"hide_clean"
 ] as string[];
 
 for item in extraItems {
@@ -32,7 +32,7 @@ for item in extraItems {
 //var limeWater = VanillaFactory.createFluid("lime_water", Color.fromHex("d7cfa4"));
 //limeWater.register();
 
-
+/*
 // Scraping Blocks
 var collisionBox = AxisAlignedBB.create(0, 0, 0, 1, 0.75, 1);
 
@@ -47,3 +47,4 @@ for i in 0 to 5 {
 	scrapingBlock.setBlockSoundType(<soundtype:wood>);
 	scrapingBlock.register();
 }
+*/

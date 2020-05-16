@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:235
+ignoreUpdate:241
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
@@ -76,6 +76,9 @@ zoomedOutEnlarged:false
 entityNametags:false
 minimapTextAlign:0
 showAngles:false
+waypointsMutualEdit:true
+compass:true
+caveMapsDepth:30
 interface:dummy:0:36:true:false:false:false
 interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false

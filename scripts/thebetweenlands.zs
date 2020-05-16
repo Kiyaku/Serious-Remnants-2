@@ -1,16 +1,33 @@
-// Add to BWM anvil
+/*
 recipes.remove(<thebetweenlands:syrmorite_helmet>);
+recipes.addShaped("syrmorite_helmet", <thebetweenlands:syrmorite_helmet>, [
+	[<jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>]
+]);
+
 recipes.remove(<thebetweenlands:syrmorite_chestplate>);
+recipes.addShaped("syrmorite_chestplate", <thebetweenlands:syrmorite_chestplate>, [
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>]
+]);
+
 recipes.remove(<thebetweenlands:syrmorite_leggings>);
+recipes.addShaped("syrmorite_leggings", <thebetweenlands:syrmorite_leggings>, [
+	[<jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>]
+]);
+
 recipes.remove(<thebetweenlands:syrmorite_boots>);
-recipes.remove(<thebetweenlands:syrmorite_shield>);
-recipes.remove(<thebetweenlands:syrmorite_shears>);
-recipes.remove(<thebetweenlands:syrmorite_pressure_plate>);
-recipes.remove(<thebetweenlands:syrmorite_trapdoor>);
-recipes.remove(<thebetweenlands:syrmorite_hopper>);
-recipes.remove(<thebetweenlands:bl_bucket:1>);
-recipes.remove(<thebetweenlands:syrmorite_door_item>);
-recipes.remove(<jaopca:item_sticksyrmorite>);
+recipes.addShaped("syrmorite_boots", <thebetweenlands:syrmorite_boots>, [
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>],
+	[<jaopca:item_platesyrmorite>, null, <jaopca:item_platesyrmorite>]
+]);
+
+recipes.addShapeless("syrmorite_ingot_to_plate", <jaopca:item_platesyrmorite>, [syrmoriteIngot, syrmoriteIngot]);
+*/
+
 
 // Add to Dawnstone anvil later?
 recipes.remove(<thebetweenlands:octine_sword>);
@@ -33,8 +50,8 @@ recipes.remove(<thebetweenlands:valonite_shield>);
 recipes.remove(<jaopca:item_stickvalonite>);
 
 // Furnace
-furnace.remove(<thebetweenlands:items_misc:11>);
-furnace.remove(<thebetweenlands:octine_ingot>);
+//furnace.remove(<thebetweenlands:items_misc:11>);
+//furnace.remove(<thebetweenlands:octine_ingot>);
 furnace.remove(<thebetweenlands:items_misc:10>); // mud bricks
 furnace.remove(<minecraft:brick>);
 furnace.addRecipe(<thebetweenlands:items_misc:10>, <minecraft:clay_ball>, 1);
@@ -51,13 +68,13 @@ recipes.addShaped("thebetweenlands_herblore_book", <thebetweenlands:manual_hl>,
 	[[<minecraft:book>, <ore:allFlowers>]]);
 
 
-recipes.remove(<thebetweenlands:purifier>);
-recipes.remove(<thebetweenlands:items_misc:11>); // syrmorite ingot
-recipes.remove(<thebetweenlands:syrmorite_block>);
-recipes.remove(<betweenores:syrmorite_nugget>);
+//recipes.remove(<thebetweenlands:purifier>);
+//recipes.remove(<thebetweenlands:items_misc:11>); // syrmorite ingot
+//recipes.remove(<thebetweenlands:syrmorite_block>);
+//recipes.remove(<betweenores:syrmorite_nugget>);
 
+/*
 furnace.addRecipe(<contenttweaker:hide_clean>, <contenttweaker:hide_soaked>, 1);
-
 
 recipes.remove(<thebetweenlands:lurker_skin_helmet>);
 recipes.addShaped("lurker_skin_helmet", <thebetweenlands:lurker_skin_helmet>, [
@@ -84,3 +101,4 @@ recipes.addShaped("lurker_skin_boots", <thebetweenlands:lurker_skin_boots>, [
 	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>],
 	[<contenttweaker:hide_clean>, null, <contenttweaker:hide_clean>]
 ]);
+*/

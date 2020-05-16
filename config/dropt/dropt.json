@@ -6,27 +6,27 @@
           "blocks": [
             "thebetweenlands:root"
           ]
+        },
+        "harvester": {
+          "heldItemMainHand": {
+            "items": [
+              "roots:stone_knife:*"
+            ]
+          }
         }
       },
-      "replaceStrategy": "REPLACE_ITEMS_IF_SELECTED",
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
       "drops": [
       {
         "selector": {
             "weight": {
-              "value": 15
+              "value": 100
             }
           },
           "item": {
             "items": [
               "roots:wildroot"
             ]
-          }
-        },
-        {
-          "selector": {
-            "weight": {
-              "value": 85
-            }
           }
         }
       ]

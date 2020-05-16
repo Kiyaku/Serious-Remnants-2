@@ -34,6 +34,21 @@ recipes.addShaped("bone_knife", <roots:stone_knife>,   [[null, null, <thebetween
 //recipes.addShaped("octine_knife", <roots:iron_knife>,    [[null, null, <ore:ingotOctine>], [null, <ore:ingotOctine>, null], [<thebetweenlands:items_misc:20>, null, null]]);
 //recipes.addShaped("valonite_knife", <roots:diamond_knife>, [[null, null, <ore:gemValonite>], [null, <ore:gemValonite>, null], [<thebetweenlands:items_misc:20>, null, null]]);
 
+recipes.remove(<roots:bonfire>);
+recipes.addShaped("pyre", <roots:bonfire>, [
+	[null, <ore:logWood>, null], 
+	[<ore:logWood>, <roots:wildroot>, <ore:logWood>], 
+	[<roots:runestone>, <roots:terra_moss>, <roots:runestone>]
+]);
+
+
+recipes.remove(<roots:component_pouch>);
+recipes.addShaped("component_pouch", <roots:component_pouch>, [
+	[rope, null, rope], 
+	[blLurkerSkin, blLurkerSkin, blLurkerSkin], 
+	[blLurkerSkin, <thebetweenlands:weedwood_chest>, blLurkerSkin]
+]);
+
 
 
 // Remove vanilla bark
@@ -150,6 +165,10 @@ Fey.removeRecipe(<roots:elemental_soil>);
 Fey.addRecipe("elemental_soil", <roots:elemental_soil>, 
 	[<thebetweenlands:swamp_dirt>, <thebetweenlands:silt>, <roots:terra_moss>, <roots:wildroot>, <minecraft:dye:15>]);
 
+Fey.removeRecipe(<roots:runestone>);
+Fey.addRecipe("runestone", <roots:runestone> * 4, 
+	[<thebetweenlands:dentrothyst_shard_green> | <thebetweenlands:items_misc:39>, <thebetweenlands:cragrock>, <thebetweenlands:cragrock>, <thebetweenlands:cragrock>, <thebetweenlands:cragrock>]);
+
 //Fey.removeRecipe(<roots:living_hoe>);
 
 
@@ -162,6 +181,9 @@ Pyre.addRecipe("embers_manual", <embers:codex>,
 Pyre.removeRecipe(<roots:cloud_berry>);
 Pyre.addRecipe("cloud_berry", <roots:cloud_berry>, 
 	[<thebetweenlands:swamp_tallgrass>, <thebetweenlands:shelf_fungus>, <ore:treeLeaves>, <roots:terra_moss>, <roots:terra_moss>]);
+
+Pyre.addRecipe("ember_shard", <embers:shard_ember> * 5, 
+	[<thebetweenlands:log_hearthgrove:1>, <thebetweenlands:log_hearthgrove:1>, <thebetweenlands:log_hearthgrove:1>, <thebetweenlands:log_hearthgrove:1>, <thebetweenlands:log_hearthgrove:1>]);
 
 
 
@@ -235,4 +257,6 @@ Transmutation.addBlockToBlockRecipe("nibbletwig_to_silverwood", <blockstate:theb
 <roots:diamond_knife>.displayName = "Valonite Knife";
 
 <roots:terra_spores>.withLore(["Can turn Crag Rock into Mossy version"]);
+<roots:wildroot>.addTooltip(format.green("Dropped when breaking roots with a knife"));
+
 mods.jei.JEI.addDescription(<roots:terra_spores>, "Can turn Crag Rock into Mossy version");

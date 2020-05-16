@@ -1,5 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.artisanworktables.builder.Copy;
+import mods.artisanintegrations.requirement.GameStages;
 
 
 val embersRecipes = [
@@ -105,7 +106,7 @@ recipes.addShaped("custom_bone_hammer", <artisanworktables:artisans_hammer_bone>
 
 recipes.addShaped("basic_workstation", <artisanworktables:workstation:5>, 
 	[[wwPlank, wwPlank, wwPlank],
-	 [<artisanworktables:artisans_handsaw_bone>, <thebetweenlands:weedwood_workbench>, <artisanworktables:artisans_hammer_bone>],
+	 [<artisanworktables:artisans_handsaw_bone>.transformDamage(20), <thebetweenlands:weedwood_workbench>, <artisanworktables:artisans_hammer_bone>.transformDamage(20)],
 	 [<thebetweenlands:polished_limestone>, <thebetweenlands:polished_limestone>, <thebetweenlands:polished_limestone>]]);
 
 
@@ -170,8 +171,7 @@ recipes.remove(<thebetweenlands:bone_helmet>);
 RecipeBuilder.get("basic")
 	.setShaped([
 		[bone, bone, bone],
-		[bone, null, bone],
-		[null, null, null]])
+		[bone, null, bone]])
 	.addOutput(<thebetweenlands:bone_helmet>)
 	.addTool(<ore:artisansHandsaw>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -220,199 +220,16 @@ RecipeBuilder.get("basic")
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
 
-RecipeBuilder.get("basic")
-  .setShapeless([<pyrotech:material:22>])
-  .setFluid(<liquid:swamp_water> * 125)
-  .addOutput(<pyrotech:material:8>) // Pyrotech Slaked Lime
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShapeless([<pyrotech:material:4>])
-  .addTool(<ore:artisansTrowel>, 1)
-  .addOutput(<pyrotech:material:9>) // Pyrotech Refractory Brick
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([[<pyrotech:material:5>, null, <pyrotech:material:5>], [null, <pyrotech:material:5>, null]])
-  .addOutput(<pyrotech:faucet_brick>)
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([[<pyrotech:material:5>, <pyrotech:material:5>], [<pyrotech:material:5>, <pyrotech:material:5>]])
-  .addOutput(<pyrotech:refractory_brick_block>)
-  .create();
-
-recipes.remove(<pyrotech:shelf>);
-RecipeBuilder.get("basic")
-  .setShaped([
- 	[<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_planks>], 
-    [<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_planks>], 
-    [<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_planks>]
-  ])
-  .addOutput(<pyrotech:shelf>) 
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:stash>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<thebetweenlands:weedwood_plank_slab>, null, <thebetweenlands:weedwood_plank_slab>], 
-    [<thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_plank_slab>]
-  ])
-  .addOutput(<pyrotech:stash>) 
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:crate>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>], 
-    [<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_planks>], 
-    [<thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>, <thebetweenlands:weedwood_planks>]
-  ])
-  .addOutput(<pyrotech:crate>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:wood_rack>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<thebetweenlands:log_weedwood:*>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:log_weedwood:*>], 
-    [<thebetweenlands:weedwood_ladder>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:weedwood_ladder>], 
-    [<thebetweenlands:log_weedwood:*>, <thebetweenlands:weedwood_plank_slab>, <thebetweenlands:log_weedwood:*>]
-  ])
-  .addOutput(<pyrotech:wood_rack>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:sawmill_blade_bone>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<pyrotech:material:11>, <pyrotech:material:11>, <pyrotech:material:11>], 
-    [<pyrotech:material:11>, <thebetweenlands:cragrock>, <pyrotech:material:11>], 
-    [<pyrotech:material:11>, <pyrotech:material:11>, <pyrotech:material:11>]
-  ])
-  .addOutput(<pyrotech:sawmill_blade_bone>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-
-recipes.remove(<pyrotech:stone_kiln>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<pyrotech:stone_bricks>, <pyrotech:material:16>, <pyrotech:stone_bricks>], 
-    [<pyrotech:stone_bricks>, <thebetweenlands:sulfur_furnace>, <pyrotech:stone_bricks>], 
-    [<pyrotech:stone_bricks>, <pyrotech:stone_bricks>, <pyrotech:stone_bricks>]
-  ])
-  .addOutput(<pyrotech:stone_kiln>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:stone_sawmill>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<pyrotech:stone_bricks>, <pyrotech:material:16>, <pyrotech:stone_bricks>], 
-    [<pyrotech:stone_bricks>, <pyrotech:sawmill_blade_bone>, <pyrotech:stone_bricks>], 
-    [<pyrotech:stone_bricks>, <pyrotech:stone_bricks>, <pyrotech:stone_bricks>]
-  ])
-  .addOutput(<pyrotech:stone_sawmill>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<pyrotech:soaking_pot>);
-RecipeBuilder.get("basic")
-  .setShaped([
-  	[<pyrotech:material:16>, null, <pyrotech:material:16>], 
-  	[<pyrotech:material:20>, <pyrotech:material:16>, <pyrotech:material:20>], 
-  	[<pyrotech:material:20>, <pyrotech:material:16>, <pyrotech:material:20>]
-  ])
-  .addOutput(<pyrotech:soaking_pot>)
-  .addTool(<ore:artisansHandsaw>, 1)
-  .addTool(<ore:artisansHammer>, 1)
-  .create();
-
-recipes.remove(<improvedbackpacks:backpack>);
-RecipeBuilder.get("basic")
-  .setShaped([
-    [<thebetweenlands:items_misc:7>, <contenttweaker:hide_clean>, <thebetweenlands:items_misc:7>],
-    [<contenttweaker:hide_clean>, <thebetweenlands:weedwood_chest>, <contenttweaker:hide_clean>],
-    [<thebetweenlands:items_misc:7>, <contenttweaker:hide_clean>, <thebetweenlands:items_misc:7>]])
-  .addTool(<ore:artisansNeedle>, 1)
-  .addOutput(<improvedbackpacks:backpack>)
-  .create();
-
-recipes.remove(<improvedbackpacks:backpack>);
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <thebetweenlands:items_misc:20>, null],
-    [<contenttweaker:hide_clean>, <thebetweenlands:weedwood_planks>, <contenttweaker:hide_clean>],
-    [null, <thebetweenlands:items_misc:20>, null]])
-  .addOutput(<improvedbackpacks:blank_upgrade>)
-  .create();
-
-recipes.remove(<improvedbackpacks:upgrade:*>);
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<thebetweenlands:log_weedwood>, <improvedbackpacks:blank_upgrade>, <thebetweenlands:log_weedwood>],
-    [null, <thebetweenlands:log_weedwood>, null]])
-  .addOutput(<improvedbackpacks:upgrade>)
-  .create();
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<thebetweenlands:log_weedwood>, <improvedbackpacks:blank_upgrade>, <thebetweenlands:log_weedwood>],
-    [null, <thebetweenlands:log_weedwood>, null]])
-  .addOutput(<improvedbackpacks:upgrade>)
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<thebetweenlands:smooth_cragrock>, <improvedbackpacks:blank_upgrade>, <thebetweenlands:smooth_cragrock>],
-    [null, <thebetweenlands:smooth_cragrock>, null]])
-  .addOutput(<improvedbackpacks:upgrade:1>)
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<jaopca:item_platesyrmorite>, <improvedbackpacks:blank_upgrade>, <jaopca:item_platesyrmorite>],
-    [null, <jaopca:item_platesyrmorite>, null]])
-  .addOutput(<improvedbackpacks:upgrade:2>)
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<jaopca:item_plateoctine>, <improvedbackpacks:blank_upgrade>, <jaopca:item_plateoctine>],
-    [null, <jaopca:item_plateoctine>, null]])
-  .addOutput(<improvedbackpacks:upgrade:3>)
-  .create();
-
-RecipeBuilder.get("basic")
-  .setShaped([
-    [null, <contenttweaker:hide_clean>, null],
-    [<jaopca:item_platevalonite>, <improvedbackpacks:blank_upgrade>, <jaopca:item_platevalonite>],
-    [null, <jaopca:item_platevalonite>, null]])
-  .addOutput(<improvedbackpacks:upgrade:4>)
-  .create();
-
 
 // --- MISC
-recipes.remove(<pyrotech:matchstick>);
+/*
+recipes.remove(<minecraft:fire_charge>);
 RecipeBuilder.get("basic")
 	.setShapeless([stick, limestone_flux, sulfur])
-	.addOutput(<pyrotech:matchstick>)
+	.addOutput(<minecraft:fire_charge>)
 	.setFluid(<liquid:rubber> * 250)
 	.create();
+*/
 
 recipes.remove(<thebetweenlands:bl_bucket:0>);
 RecipeBuilder.get("basic")
@@ -424,6 +241,7 @@ RecipeBuilder.get("basic")
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
 
+/*
 RecipeBuilder.get("basic")
 	.setShaped([[weedwoodLog, <ore:ingotCopper>, weedwoodLog],
 				[wwPlank, <pyrotech:shelf>, wwPlank],
@@ -432,13 +250,14 @@ RecipeBuilder.get("basic")
 	.addTool(<ore:artisansHandsaw>, 1)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
+*/
 
 RecipeBuilder.get("basic")
 	.setShaped([[<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>],
-				[<ore:artisansDriver>, <thebetweenlands:weedwood_workbench>, <ore:artisansHammer>],
-				[<thebetweenlands:polished_limestone>, <thebetweenlands:polished_limestone>, <thebetweenlands:polished_limestone>]])
+				[<ore:ingotSyrmorite>, <thebetweenlands:weedwood_workbench>, <ore:ingotSyrmorite>],
+				[<roots:runestone>, <roots:runestone>, <roots:runestone>]])
 	.addOutput(<artisanworktables:workstation:3>) 
-	.addTool(<ore:artisansHandsaw>, 1)
+	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
 
@@ -464,20 +283,20 @@ RecipeBuilder.get("basic")
   .addOutput(<thebetweenlands:items_misc:32> * 2)
   .create();
 
-recipes.remove(<pyrotech:stone_bricks>);
 RecipeBuilder.get("basic")
-  .setShaped([
-    [<pyrotech:material:16>, <pyrotech:material:16>],
-    [<pyrotech:material:16>, <pyrotech:material:16>]])
-  .addOutput(<pyrotech:stone_bricks>)
-  .create();
+	.setShaped([[bone, <thebetweenlands:pestle>, bone], 
+				[null, bone, null]])
+	.addOutput(<advancedmortars:mortar:0>)
+	.addTool(<ore:artisansHammer>, 1)
+	.create();
+
   
 
 ////////////////////////////////////
 // BLACKSMITH TABLE
 ////////////////////////////////////
 
-
+/*
 recipes.remove(<thebetweenlands:weedwood_chest>);
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -487,12 +306,14 @@ RecipeBuilder.get("basic")
 	.addOutput(<thebetweenlands:weedwood_chest>)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
+*/
+
 
 recipes.remove(<thebetweenlands:bl_bucket:1>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([[null, rope, null],
-				[syrmoritePlate, null, syrmoritePlate],
-				[null, syrmoritePlate, null]])
+				[syrmoriteIngot, null, syrmoriteIngot],
+				[null, syrmoriteIngot, null]])
 	.addOutput(<thebetweenlands:bl_bucket:1>)
 	.addTool(<ore:artisansCutters>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -503,8 +324,8 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_helmet>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, null, syrmoritePlate],
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, null, syrmoriteIngot],
 		[null, null, null]])
 	.addOutput(<thebetweenlands:syrmorite_helmet>)
 	.addTool(<ore:artisansDriver>, 1)
@@ -514,9 +335,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_chestplate>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, null, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate]])
+		[syrmoriteIngot, null, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_chestplate>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -525,9 +346,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_leggings>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, null, syrmoritePlate],
-		[syrmoritePlate, null, syrmoritePlate]])
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, null, syrmoriteIngot],
+		[syrmoriteIngot, null, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_leggings>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -536,8 +357,8 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_boots>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, null, syrmoritePlate],
-		[syrmoritePlate, null, syrmoritePlate]])
+		[syrmoriteIngot, null, syrmoriteIngot],
+		[syrmoriteIngot, null, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_boots>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -546,9 +367,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_shield>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[null, syrmoritePlate, null]])
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[null, syrmoriteIngot, null]])
 	.addOutput(<thebetweenlands:syrmorite_shield>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -557,9 +378,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_door_item>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate]])
+		[syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_door_item> * 3)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -568,9 +389,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_hopper>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, null, syrmoritePlate],
-		[syrmoritePlate, <thebetweenlands:weedwood_chest>, syrmoritePlate],
-		[null, syrmoritePlate, null]])
+		[syrmoriteIngot, null, syrmoriteIngot],
+		[syrmoriteIngot, <thebetweenlands:weedwood_chest>, syrmoriteIngot],
+		[null, syrmoriteIngot, null]])
 	.addOutput(<thebetweenlands:syrmorite_hopper>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -579,8 +400,8 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_trapdoor>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate],
-		[syrmoritePlate, syrmoritePlate, syrmoritePlate]])
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot],
+		[syrmoriteIngot, syrmoriteIngot, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_trapdoor> * 2)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
@@ -589,37 +410,11 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<thebetweenlands:syrmorite_pressure_plate>);
 RecipeBuilder.get("blacksmith")
 	.setShaped([
-		[syrmoritePlate, syrmoritePlate]])
+		[syrmoriteIngot, syrmoriteIngot]])
 	.addOutput(<thebetweenlands:syrmorite_pressure_plate>)
 	.addTool(<ore:artisansDriver>, 1)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
-
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>],
-    [<ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>],
-    [<ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>, <ore:nuggetSyrmorite>]])
-  .addOutput(<thebetweenlands:items_misc:11>)
-  .create();
-
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:blockSyrmorite>])
-  .addOutput(<thebetweenlands:items_misc:11> * 9)
-  .create();
-
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotSyrmorite>])
-  .addOutput(<thebetweenlands:items_misc:41> * 9)
-  .create();
-
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>],
-    [<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>],
-    [<ore:ingotSyrmorite>, <ore:ingotSyrmorite>, <ore:ingotSyrmorite>]])
-  .addOutput(<thebetweenlands:syrmorite_block>)
-  .create();
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
@@ -628,10 +423,11 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 1)
   .create();
 
+/*
 RecipeBuilder.get("blacksmith")
 	.setShaped([[null, null, <ore:stickWood>], 
-				[syrmoritePlate, <pyrotech:material:11>, syrmoritePlate], 
-				[null, syrmoritePlate, null]])
+				[syrmoriteIngot, <pyrotech:material:11>, syrmoriteIngot], 
+				[null, syrmoriteIngot, null]])
 	.addOutput(<advancedmortars:mortar:2>)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
@@ -651,6 +447,8 @@ RecipeBuilder.get("blacksmith")
 	.addOutput(<advancedmortars:mortar:4>)
 	.addTool(<ore:artisansHammer>, 1)
 	.create();
+*/
+
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
@@ -725,6 +523,7 @@ for recipe in embersRecipes {
 		  .replaceInput(<minecraft:compass>, <embers:ember_detector>)
 		  .replaceInput(<minecraft:furnace>, <thebetweenlands:sulfur_furnace_dual>)
   	  )
+  	  .addRequirement(GameStages.allOf(["ore_tier_2"]))
 	  .addTool(<ore:artisansHammer>, 1)
 	  .addTool(<ore:artisansDriver>, 1)
 	  .create();

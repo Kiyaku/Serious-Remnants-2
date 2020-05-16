@@ -18,6 +18,7 @@ global syrmoriteArmor as IItemStack = <contenttweaker:item_syrmorite_armor>;
 global octineIngot as IItemStack = <thebetweenlands:octine_ingot>;
 global octinePlate as IItemStack = <jaopca:item_plateoctine>;
 global valonitePlate as IItemStack = <jaopca:item_platevalonite>;
+global blLurkerSkin as IItemStack = <thebetweenlands:items_misc:4>;
 
 
 global metalTypes as IOreDictEntry[string][string] = {
